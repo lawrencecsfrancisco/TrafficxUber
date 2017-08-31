@@ -53,11 +53,11 @@ public class Packagesets extends AppCompatActivity implements View.OnClickListen
 
     private String[] tagLines = {
             "These are Set of itineraries that contains different variety of destination, You just select any of the Set and you are ready to go.",
-            "Sample",
-            "Sample.",
-            "Sample.",
-            "Sample",
-            "Sample"
+            "A great place to Visit",
+            "Creating the perfect vacation",
+            "Collect moments, not things",
+            "We're Here to get you There",
+            "Remember to Explore"
     };
 
 
@@ -105,9 +105,9 @@ public class Packagesets extends AppCompatActivity implements View.OnClickListen
                 R.drawable.img_destmo,
                 R.drawable.img_set1,
                 R.drawable.img_set2,
-                R.drawable.img_set1,
-                R.drawable.img_set2,
-                R.drawable.img_set1
+                R.drawable.img_set3,
+                R.drawable.img_set4,
+                R.drawable.img_set5
                 //   R.drawable.image_five
         };
 
@@ -537,5 +537,12 @@ public class Packagesets extends AppCompatActivity implements View.OnClickListen
             HelperView.getCurrentView().findViewById(R.id.tvTileTagLine).setVisibility(View.VISIBLE);
         }
     }
-}
 
+    @Override
+    public void onBackPressed() {
+        finish();
+        Intent i = new Intent(this,TemplateOrChoices.class);
+        startActivity(i);
+    }
+
+}
