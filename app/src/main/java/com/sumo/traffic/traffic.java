@@ -665,7 +665,12 @@ public class traffic extends FragmentActivity implements LocationListener, OnMap
 
         requestButton = (RideRequestButton)findViewById(R.id.button8);
 
-
+        SessionConfiguration config = new SessionConfiguration.Builder()
+                .setClientId("NwteyMA-ot7Xc1qMElNyw7ai5kLtSZQS")
+                .setServerToken("oa48R-U1O7FiJWCAl1qKCa-AAFf59VNqx8T70xht")
+                .build();
+        ServerTokenSession session = new ServerTokenSession(config);
+        requestButton.setSession(session);
 
     }
 
@@ -780,40 +785,6 @@ public class traffic extends FragmentActivity implements LocationListener, OnMap
 
     public void navigate(View view) {
 
-        RideParameters rideParams = new RideParameters.Builder()
-                .setPickupLocation(latitude, longitude, "You", "")
-                .setDropoffLocation(markers.get(1).getPosition().latitude, markers.get(1).getPosition().longitude, "Your Destination", "") // Price estimate will only be provided if this is provided.
-                .setProductId("a1111c8c-c720-46c3-8534-2fcdd730040d") // Optional. If not provided, the cheapest product will be used.
-                .build();
-
-        SessionConfiguration config = new SessionConfiguration.Builder()
-                .setClientId("NwteyMA-ot7Xc1qMElNyw7ai5kLtSZQS")
-                .setServerToken("oa48R-U1O7FiJWCAl1qKCa-AAFf59VNqx8T70xht")
-                .build();
-        ServerTokenSession session = new ServerTokenSession(config);
-
-        RideRequestButtonCallback callback = new RideRequestButtonCallback() {
-
-            @Override
-            public void onRideInformationLoaded() {
-
-            }
-
-            @Override
-            public void onError(ApiError apiError) {
-
-            }
-
-            @Override
-            public void onError(Throwable throwable) {
-
-            }
-        };
-
-        requestButton.setRideParameters(rideParams);
-        requestButton.setSession(session);
-        requestButton.setCallback(callback);
-        requestButton.loadRideInformation();
 
         if (mGoogleApiClient.isConnected()) {
             mMap.moveCamera(CameraUpdateFactory.newLatLng(latLng));
@@ -845,6 +816,42 @@ public class traffic extends FragmentActivity implements LocationListener, OnMap
             mMap.setMapStyle(
                     MapStyleOptions.loadRawResourceStyle(
                             this, R.raw.drivingmode));
+            if (!InitialListStaffs.isEmpty())
+            {
+
+                RideParameters rideParams = new RideParameters.Builder()
+                        .setPickupLocation(latitude, longitude, "You", "")
+                        .setDropoffLocation(markers.get(1).getPosition().latitude, markers.get(1).getPosition().longitude, "Your Destination", "") // Price estimate will only be provided if this is provided.
+                        .setProductId("a1111c8c-c720-46c3-8534-2fcdd730040d") // Optional. If not provided, the cheapest product will be used.
+                        .build();
+
+
+
+                RideRequestButtonCallback callback = new RideRequestButtonCallback() {
+
+                    @Override
+                    public void onRideInformationLoaded() {
+
+                    }
+
+                    @Override
+                    public void onError(ApiError apiError) {
+
+                    }
+
+                    @Override
+                    public void onError(Throwable throwable) {
+
+                    }
+                };
+
+                requestButton.setRideParameters(rideParams);
+
+                requestButton.setCallback(callback);
+                requestButton.loadRideInformation();
+
+            }
+
 
         }
 
@@ -853,13 +860,17 @@ public class traffic extends FragmentActivity implements LocationListener, OnMap
             driverspeed.setVisibility(View.GONE);
             driversearch.setVisibility(View.VISIBLE);
             mainmenus.setVisibility(View.VISIBLE);
+            menured.setVisibility(View.VISIBLE);
             turntexter.setVisibility(View.GONE);
+            requestButton.setVisibility(View.GONE);
             checkreroute = 1;
         } else if (checkreroute == 1) {
             reroute.setVisibility(View.VISIBLE);
             driverspeed.setVisibility(View.VISIBLE);
+            menured.setVisibility(View.GONE);
             driversearch.setVisibility(View.GONE);
             mainmenus.setVisibility(View.GONE);
+            requestButton.setVisibility(View.VISIBLE);
             turntexter.setVisibility(View.VISIBLE);
             checkreroute = 0;
         }
