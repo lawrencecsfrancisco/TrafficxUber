@@ -96,6 +96,15 @@ import com.sumo.traffic.bestplaces.bestplaces_package3;
 import com.sumo.traffic.bestplaces.bestplaces_package4;
 import com.sumo.traffic.bestplaces.bestplaces_package5;
 import com.sumo.traffic.model.ApplicationConstants;
+import com.uber.sdk.android.core.auth.AuthenticationError;
+import com.uber.sdk.android.core.auth.LoginCallback;
+import com.uber.sdk.android.rides.RideParameters;
+import com.uber.sdk.android.rides.RideRequestButton;
+import com.uber.sdk.android.rides.RideRequestButtonCallback;
+import com.uber.sdk.core.auth.AccessToken;
+import com.uber.sdk.rides.client.ServerTokenSession;
+import com.uber.sdk.rides.client.SessionConfiguration;
+import com.uber.sdk.rides.client.error.ApiError;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -272,6 +281,7 @@ public class traffic extends FragmentActivity implements LocationListener, OnMap
     Date date1, date2;
     String test;
 
+    RideRequestButton requestButton;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -653,6 +663,10 @@ public class traffic extends FragmentActivity implements LocationListener, OnMap
             }
         });
 
+        requestButton = (RideRequestButton)findViewById(R.id.button8);
+
+
+
     }
 
     public void packganern() {
@@ -766,6 +780,40 @@ public class traffic extends FragmentActivity implements LocationListener, OnMap
 
     public void navigate(View view) {
 
+        RideParameters rideParams = new RideParameters.Builder()
+                .setPickupLocation(latitude, longitude, "You", "")
+                .setDropoffLocation(markers.get(1).getPosition().latitude, markers.get(1).getPosition().longitude, "Your Destination", "") // Price estimate will only be provided if this is provided.
+                .setProductId("a1111c8c-c720-46c3-8534-2fcdd730040d") // Optional. If not provided, the cheapest product will be used.
+                .build();
+
+        SessionConfiguration config = new SessionConfiguration.Builder()
+                .setClientId("NwteyMA-ot7Xc1qMElNyw7ai5kLtSZQS")
+                .setServerToken("oa48R-U1O7FiJWCAl1qKCa-AAFf59VNqx8T70xht")
+                .build();
+        ServerTokenSession session = new ServerTokenSession(config);
+
+        RideRequestButtonCallback callback = new RideRequestButtonCallback() {
+
+            @Override
+            public void onRideInformationLoaded() {
+
+            }
+
+            @Override
+            public void onError(ApiError apiError) {
+
+            }
+
+            @Override
+            public void onError(Throwable throwable) {
+
+            }
+        };
+
+        requestButton.setRideParameters(rideParams);
+        requestButton.setSession(session);
+        requestButton.setCallback(callback);
+        requestButton.loadRideInformation();
 
         if (mGoogleApiClient.isConnected()) {
             mMap.moveCamera(CameraUpdateFactory.newLatLng(latLng));

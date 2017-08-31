@@ -297,8 +297,8 @@
 
             <com.uber.sdk.android.rides.RideRequestButton
                 android:id="@+id/button8"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
                 android:text="Button" />
         </RelativeLayout>

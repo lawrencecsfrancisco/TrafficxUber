@@ -47,7 +47,11 @@
         <activity android:name=".Home" />
         <activity android:name=".DirectionsApi" />
         <activity android:name=".traffic">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
         <activity android:name=".introv2"></activity>
         <activity
@@ -240,11 +244,7 @@
         <activity android:name=".ChoicesOfPackage" />
         <activity android:name=".AlarmActivity" />
         <activity android:name=".WelcomeSlider">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity android:name=".ReviewChoiceOfPlace"  >
 
