@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#000000"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#FFF0D6"
+            android:orientation="vertical">
+
+            <!--StartTitle-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:gravity="center">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Maginhawa Food Park"
+                    android:textColor="#EE7469"
+                    android:textSize="32sp"
+                    android:textStyle="normal|bold" />
+            </LinearLayout>
+            <!--End-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="@drawable/magin">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="220dp"
+                    android:orientation="horizontal"
+                    android:weightSum="1"
+                    android:background="#EE7469"
+                    android:visibility="gone"
+                    android:id="@+id/hiders">
+
+                    <Button
+                        android:layout_width="250dp"
+                        android:layout_height="40dp"
+                        android:text="Ateneo Art Gallery"
+                        android:background="#FFF0D6"
+                        android:textColor="#EE7469"
+                        android:onClick="p1"
+                        android:id="@+id/p1"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="35dp" />
+
+                    <Button
+                        android:layout_width="250dp"
+                        android:layout_height="40dp"
+                        android:text="Vargas Museum"
+                        android:background="#FFF0D6"
+                        android:textColor="#EE7469"
+                        android:id="@+id/p2"
+                        android:onClick="p2"
+                        android:layout_below="@+id/p1"
+                        android:layout_alignStart="@+id/p1"
+                        android:layout_marginTop="10dp" />
+
+                    <Button
+                        android:layout_width="250dp"
+                        android:layout_height="40dp"
+                        android:background="#FFF0D6"
+                        android:textColor="#EE7469"
+                        android:id="@+id/p3"
+                        android:onClick="p3"
+                        android:layout_below="@+id/p2"
+                        android:layout_alignStart="@+id/p2"
+                        android:layout_marginTop="10dp"
+                        android:text="UP Ayala TechnoHub" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="Suggested Places"
+                        android:textStyle="bold"
+                        android:textSize="20dp"
+                        android:textColor="#383732"
+                        android:layout_marginTop="5dp"
+                        android:id="@+id/textView21"
+                        android:gravity="center"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentEnd="true" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_gravity="bottom"
+                    android:background="#383732"
+                    android:orientation="horizontal">
+                    <RatingBar
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/ratingBar"
+                        android:isIndicator="true"
+                        android:scaleX=".5"
+                        android:scaleY=".5"
+                        android:rating="4.5"/>
+                </LinearLayout><!--QUEZONMEMORIALCIRCLE -->
+            </LinearLayout>
+
+            <!--   START NEW SCROLL VIEW-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="About"
+                    android:textColor="#383732"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:id="@+id/textView"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:textStyle="bold"
+                    android:layout_alignParentStart="true" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceSmallPopupMenu"
+                        android:text="The latest food community to hit Quezon City, it features 12 new food concepts housed and backyard picnic style dining."
+                        android:id="@+id/textView2"
+                        android:layout_below="@+id/textView"
+                        android:textColor="#383732"
+                        android:layout_toRightOf="@+id/textView"
+                        android:layout_alignParentEnd="true" />
+                </LinearLayout>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="Contact"
+                    android:layout_marginLeft="10dp"
+                    android:id="@+id/textView3"
+                    android:textColor="#383732"
+                    android:textStyle="bold"
+                    android:layout_below="@+id/textView2"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceSmallPopupMenu"
+                        android:text="..."
+                        android:id="@+id/textView4"
+                        android:textColor="#383732"
+                        android:layout_below="@+id/textView3"
+                        android:layout_alignLeft="@+id/textView2"
+                        android:layout_alignStart="@+id/textView2" />
+                </LinearLayout>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="Address"
+                    android:layout_marginLeft="10dp"
+                    android:id="@+id/textView5"
+                    android:textColor="#383732"
+                    android:textStyle="bold"
+                    android:layout_below="@+id/textView4"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceSmallPopupMenu"
+                        android:text="91 Maginhawa, Diliman, Lungsod Quezon, 1101 Kalakhang Maynila"
+                        android:id="@+id/textView6"
+                        android:textColor="#383732"
+                        android:layout_below="@+id/textView5"
+                        android:layout_toRightOf="@+id/textView"
+                        android:layout_toEndOf="@+id/textView" />
+                </LinearLayout>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="Overview"
+                    android:layout_marginLeft="10dp"
+                    android:id="@+id/textView7"
+                    android:textColor="#383732"
+                    android:textStyle="bold"
+                    android:layout_below="@+id/textView4"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceSmallPopupMenu"
+                        android:text="Roll--a long roll of food stalls, restaurants, coffee shops, and cafe where you can enjoy any food of your choice at a good (or reasonable) price.\nNice place to go on weekends."
+                        android:id="@+id/textView8"
+                        android:textColor="#383732"
+                        android:layout_below="@+id/textView5"
+                        android:layout_toRightOf="@+id/textView"
+                        android:layout_toEndOf="@+id/textView" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp">
+                        <Button
+                            style="?android:attr/buttonStyleSmall"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="#EE7469"
+                            android:background="@drawable/border"
+                            android:text="Add Destination"
+                            android:layout_marginBottom="10dp"
+                            android:layout_below="@+id/hiders"
+                            android:id="@+id/ad"
+                            android:layout_alignParentStart="true"
+                            android:onClick="artadd" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp">
+                        <Button
+                            style="?android:attr/buttonStyleSmall"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="#EE7469"
+                            android:background="@drawable/border"
+                            android:text="Delete Destination"
+                            android:id="@+id/button2"
+                            android:onClick="artdelete"
+                            android:layout_below="@+id/ad"
+                            android:layout_alignEnd="@+id/textView6" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/number_layout"
+                android:layout_marginTop="10dp" />
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

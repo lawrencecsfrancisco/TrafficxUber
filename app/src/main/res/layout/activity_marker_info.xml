@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_marker_info"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF0D6"
+    android:orientation="vertical"
+    tools:context="com.sumo.traffic.MarkerInfoActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="7dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/relative_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/place_name_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="12dp"
+                    android:text="Place name"
+                    android:textColor="#EE7469"
+                    android:textSize="30sp"
+                    android:textStyle="normal|bold" />                <!-- android:layout_below="@+id/ratingBar" -->
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/relative_pager"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_below="@id/place_name_text">
+
+                <android.support.v4.view.ViewPager
+                    android:id="@+id/viewPager"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="#383732"
+                    android:orientation="horizontal">
+
+                    <RatingBar
+                        android:id="@+id/ratingBar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_above="@+id/place_address_text"
+                        android:layout_alignParentStart="true"
+                        android:scaleX=".5"
+                        android:scaleY=".5" />
+
+                    <me.relex.circleindicator.CircleIndicator
+                        android:id="@+id/circleIndicator"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:elevation="3dp" />
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/number_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/place_address_text"
+                android:layout_below="@+id/place_opening_hours"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/call_button"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:background="@drawable/ic_call_black_18dp"
+                    android:backgroundTintMode="screen"
+                    android:elevation="20dp"
+                    android:onClick="openNumberDialer" />
+
+                <TextView
+                    android:id="@+id/place_number_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:text="@android:string/emptyPhoneNumber"
+                    android:textColor="#383732" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/powered_by_google"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@id/relative_pager"
+                android:layout_marginTop="10dp"
+                android:background="#EE7469"
+                android:src="@drawable/powered_by_google_dark" />
+
+            <TextView
+                android:id="@+id/place_type_text"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/place_address_text"
+                android:layout_below="@id/powered_by_google"
+                android:layout_marginTop="16dp"
+                android:text="Place type"
+                android:textColor="#383732"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/place_address_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/place_name_text"
+                android:layout_below="@+id/place_type_text"
+                android:layout_marginTop="14dp"
+                android:text="Place address"
+                android:textColor="#383732"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/place_is_open"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@id/place_name_text"
+                android:layout_below="@id/place_address_text"
+                android:layout_marginTop="10dp"
+                android:text="Place is open"
+                android:textColor="#383732"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/place_opening_hours"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@id/place_name_text"
+                android:layout_below="@id/place_is_open"
+                android:layout_marginTop="10dp"
+                android:text="Opening times:"
+                android:textColor="#383732"
+                android:textStyle="bold" />
+            <Button
+                android:id="@+id/button7"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignTop="@+id/recyclerView"
+                android:layout_marginTop="48dp"
+                android:background="@drawable/border"
+                android:onClick="street"
+                android:text="Show using Street View"
+                android:textColor="#EE7469" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/number_layout"
+                android:layout_marginTop="10dp" />
+
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

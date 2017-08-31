@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/route"
+        android:icon="@drawable/listdest"
+        android:title="List of Route" />
+    <item
+        android:id="@+id/traffic"
+        android:icon="@drawable/alternate"
+        android:title="Alternate Route" />
+    <item
+        android:id="@+id/places"
+        android:icon="@drawable/ic_place"
+        android:title="@string/Places" />
+    <item
+        android:id="@+id/directions"
+        android:icon="@drawable/ic_directions"
+        android:title="@string/Directions" />
+
+    <item
+        android:id="@+id/reset"
+        android:icon="@drawable/ic_border_clear"
+        android:title="@string/Reset" />
+
+</menu>
