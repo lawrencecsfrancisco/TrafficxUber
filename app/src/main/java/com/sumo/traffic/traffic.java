@@ -423,7 +423,7 @@ public class traffic extends FragmentActivity implements LocationListener, OnMap
             bottomNavigationView.findViewById(R.id.directions).setVisibility(View.GONE);
             bottomNavigationView.findViewById(R.id.places).setVisibility(View.GONE);
             bottomNavigationView.findViewById(R.id.reset).setVisibility(View.GONE);
-            fab4.setVisibility(View.VISIBLE);
+            fab4.setVisibility(View.GONE);
 
         } else if (TemplateOrChoices.packages == 3) {
             fab2.setLabelText("Reselect");
@@ -689,8 +689,8 @@ public class traffic extends FragmentActivity implements LocationListener, OnMap
 
             ateneogallery();
             santamaria();
-            balara();
             uptc();
+            balara();
             heritage();
 
 
@@ -818,7 +818,6 @@ public class traffic extends FragmentActivity implements LocationListener, OnMap
                             this, R.raw.drivingmode));
             if (!InitialListStaffs.isEmpty())
             {
-
                 RideParameters rideParams = new RideParameters.Builder()
                         .setPickupLocation(latitude, longitude, "You", "")
                         .setDropoffLocation(markers.get(1).getPosition().latitude, markers.get(1).getPosition().longitude, "Your Destination", "") // Price estimate will only be provided if this is provided.
@@ -1916,6 +1915,8 @@ public class traffic extends FragmentActivity implements LocationListener, OnMap
             }
 
         }
+
+
         if (InfoOfNinoy.select == 1) {
 
 
@@ -1923,6 +1924,17 @@ public class traffic extends FragmentActivity implements LocationListener, OnMap
                 wildlife();
                 ninoy = 1;
             } else if (ninoy == 1) {
+
+            }
+
+        }
+
+
+        if (InfoOfBayani.select == 1) {
+            if (bayani == 0) {
+                bantayog();
+                bayani = 1;
+            } else if (bayani == 1) {
 
             }
 
@@ -2018,15 +2030,6 @@ public class traffic extends FragmentActivity implements LocationListener, OnMap
         }
 
 
-        if (InfoOfBayani.select == 1) {
-            if (bayani == 0) {
-                bantayog();
-                bayani = 1;
-            } else if (bayani == 1) {
-
-            }
-
-        }
 
 
         if (InfoOfWatershed.select == 1) {
@@ -4122,6 +4125,9 @@ public class traffic extends FragmentActivity implements LocationListener, OnMap
 
         if (!elatz.isEmpty() && !elongz.isEmpty()) {
             if (mList.size() > 1) {
+
+
+
 
                 Location user = new Location("");
                 user.setLatitude(latitude);
