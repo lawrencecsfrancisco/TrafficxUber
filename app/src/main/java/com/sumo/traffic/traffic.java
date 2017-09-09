@@ -192,8 +192,7 @@ public class traffic extends FragmentActivity implements LocationListener, OnMap
 
     static int ekis;
 
-    static int art = 0;
-    static int ateneo = 0;
+
     static LatLng streetmap;
 
     static int button3;
@@ -477,6 +476,8 @@ public class traffic extends FragmentActivity implements LocationListener, OnMap
                     elatz = new ArrayList<Double>();
                     elongz = new ArrayList<Double>();
                     ttsturns = new ArrayList<>();
+
+
                     mMap.clear();
                     Intent i = new Intent(traffic.this, ReviewChoiceOfPlace.class);
                     // set the new task and clear flags
@@ -1849,8 +1850,10 @@ public class traffic extends FragmentActivity implements LocationListener, OnMap
     int maginhawa = 0;
     int ninoy = 0;
     int parish = 0;
+    int ateneo = 0;
+    int art = 0;
     int people = 0;
-    int qcx = 0;
+
     int qmc = 0;
     int up = 0;
     int vargas = 0;
@@ -1884,7 +1887,12 @@ public class traffic extends FragmentActivity implements LocationListener, OnMap
                 ArtInIsland();
                 art = 1;
 
+
+
+
             } else if (art == 1) {
+
+
 
             }
         }
@@ -2057,6 +2065,7 @@ public class traffic extends FragmentActivity implements LocationListener, OnMap
 
 
         Toast.makeText(getApplicationContext(), "Place Updated!", Toast.LENGTH_LONG).show();
+
 
 
     }
@@ -3871,11 +3880,8 @@ public class traffic extends FragmentActivity implements LocationListener, OnMap
         distanceview.setVisibility(View.VISIBLE);*/
 
         connectAsyncTask2 downloadTask2 = new connectAsyncTask2(url, this, true);
-        if (downloadTask2.getStatus().equals(AsyncTask.Status.PENDING)) {
-            downloadTask2.execute();
-        } else if (downloadTask2.getStatus().equals(AsyncTask.Status.FINISHED)) {
-            selected();
-        }
+        downloadTask2.execute();
+
 
 
     }
@@ -3990,6 +3996,9 @@ public class traffic extends FragmentActivity implements LocationListener, OnMap
         longitude = location.getLongitude();
         latLng = new LatLng(location.getLatitude(), location.getLongitude());
 
+
+Log.d("InfoOfArt.select","InfoOfArt.select"+InfoOfArt.select);
+        Log.d("InfoOfArt.select","art"+art);
 
         getspeed(location);
 
