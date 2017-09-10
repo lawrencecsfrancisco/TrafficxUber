@@ -43,7 +43,6 @@ public class Pack1 extends Activity {
     private TextView subtitleTextView, subDesc;
     private View descriptionLayout;
 
-    static int packs;
     String placeid;
     RecyclerView r2;
     TextView sr1;
@@ -73,9 +72,10 @@ public class Pack1 extends Activity {
         qp1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                packs = 1;
+traffic.packs = 1;
                 Intent i = new Intent(Pack1.this, traffic.class);
                 startActivity(i);
+
             }
         });
 

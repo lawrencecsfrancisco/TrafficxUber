@@ -38,7 +38,7 @@ public class Pack2 extends Activity {
     private TextView subtitleTextView_1, subDesc_1;
     private View descriptionLayout1;
 
-    static int packs;
+
     String placeid;
     RecyclerView r2;
     TextView sr2;
@@ -69,7 +69,7 @@ public class Pack2 extends Activity {
         qp2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                packs = 2;
+                traffic.packs = 2;
                 Intent i = new Intent(Pack2.this, traffic.class);
                 startActivity(i);
             }

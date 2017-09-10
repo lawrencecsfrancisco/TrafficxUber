@@ -390,7 +390,6 @@ public class traffic extends FragmentActivity implements LocationListener, OnMap
                 listofturns = new LinkedList<String>();
                 alarmClocks = new ArrayList<>();
                 mMap.clear();
-                mMap.clear();
                 InitialListStaffs = new ArrayList<TurnItem>();
                 latz = new ArrayList<Double>();
                 longz = new ArrayList<Double>();
@@ -439,19 +438,19 @@ public class traffic extends FragmentActivity implements LocationListener, OnMap
             public void onClick(View view) {
 
                 if (Packagesets.packages == 1) {  // TemplateOrChoices
-                    if (Pack1.packs == 1) {   // ChoicesOfPacakge
+                    if (packs == 1) {   // ChoicesOfPacakge
                         Intent i = new Intent(traffic.this, bestplaces_package1.class);
                         startActivity(i);
-                    } else if (Pack2.packs == 2) {
+                    } else if (packs == 2) {
                         Intent i = new Intent(traffic.this, bestplaces_package2.class);
                         startActivity(i);
-                    } else if (Pack3.packs == 3) {
+                    } else if (packs == 3) {
                         Intent i = new Intent(traffic.this, bestplaces_package3.class);
                         startActivity(i);
-                    } else if (Pack4.packs == 4) {
+                    } else if (packs == 4) {
                         Intent i = new Intent(traffic.this, bestplaces_package4.class);
                         startActivity(i);
-                    } else if (Pack5.packs == 5) {
+                    } else if (packs == 5) {
                         Intent i = new Intent(traffic.this, bestplaces_package5.class);
                         startActivity(i);
                     }
@@ -676,7 +675,7 @@ public class traffic extends FragmentActivity implements LocationListener, OnMap
     }
 
     public void packganern() {
-        if (Pack1.packs == 1) {
+        if (packs == 1) {
 
 
             ArtInIsland();
@@ -686,7 +685,7 @@ public class traffic extends FragmentActivity implements LocationListener, OnMap
             amoranto();
 
 
-        } else if (Pack2.packs == 2) {
+        } else if (packs == 2) {
 
             ateneogallery();
             santamaria();
@@ -695,7 +694,7 @@ public class traffic extends FragmentActivity implements LocationListener, OnMap
             heritage();
 
 
-        } else if (Pack3.packs == 3) {
+        } else if (packs == 3) {
 
             edsa();
             eastwood();
@@ -704,7 +703,7 @@ public class traffic extends FragmentActivity implements LocationListener, OnMap
             up();
 
 
-        } else if (Pack4.packs == 4) {
+        } else if (packs == 4) {
 
             cubaoexpo();
             rita();
@@ -713,7 +712,7 @@ public class traffic extends FragmentActivity implements LocationListener, OnMap
             wildlife();
 
 
-        } else if (Pack5.packs == 5) {
+        } else if (packs == 5) {
 
             kamalig();
             armedforces();
@@ -819,36 +818,7 @@ public class traffic extends FragmentActivity implements LocationListener, OnMap
                             this, R.raw.drivingmode));
             if (!InitialListStaffs.isEmpty())
             {
-                RideParameters rideParams = new RideParameters.Builder()
-                        .setPickupLocation(latitude, longitude, "You", "")
-                        .setDropoffLocation(markers.get(1).getPosition().latitude, markers.get(1).getPosition().longitude, "Your Destination", "") // Price estimate will only be provided if this is provided.
-                        .setProductId("a1111c8c-c720-46c3-8534-2fcdd730040d") // Optional. If not provided, the cheapest product will be used.
-                        .build();
 
-
-
-                RideRequestButtonCallback callback = new RideRequestButtonCallback() {
-
-                    @Override
-                    public void onRideInformationLoaded() {
-
-                    }
-
-                    @Override
-                    public void onError(ApiError apiError) {
-
-                    }
-
-                    @Override
-                    public void onError(Throwable throwable) {
-
-                    }
-                };
-
-                requestButton.setRideParameters(rideParams);
-
-                requestButton.setCallback(callback);
-                requestButton.loadRideInformation();
 
             }
 
@@ -4088,7 +4058,7 @@ Log.d("InfoOfArt.select","InfoOfArt.select"+InfoOfArt.select);
 
         if (driving == 1) {
             mMap.setMyLocationEnabled(false);
-            m.remove();
+
             mCurrLocationMarker = mMap.addMarker(new MarkerOptions()
                     .position(latLng)
                     .flat(true)
@@ -4134,6 +4104,37 @@ Log.d("InfoOfArt.select","InfoOfArt.select"+InfoOfArt.select);
 
         if (!elatz.isEmpty() && !elongz.isEmpty()) {
             if (mList.size() > 1) {
+
+                RideParameters rideParams = new RideParameters.Builder()
+                        .setPickupLocation(latitude, longitude, "You", "")
+                        .setDropoffLocation(markers.get(1).getPosition().latitude, markers.get(1).getPosition().longitude, "Your Destination", "") // Price estimate will only be provided if this is provided.
+                        .setProductId("a1111c8c-c720-46c3-8534-2fcdd730040d") // Optional. If not provided, the cheapest product will be used.
+                        .build();
+
+
+
+                RideRequestButtonCallback callback = new RideRequestButtonCallback() {
+
+                    @Override
+                    public void onRideInformationLoaded() {
+
+                    }
+
+                    @Override
+                    public void onError(ApiError apiError) {
+
+                    }
+
+                    @Override
+                    public void onError(Throwable throwable) {
+
+                    }
+                };
+
+                requestButton.setRideParameters(rideParams);
+
+                requestButton.setCallback(callback);
+                requestButton.loadRideInformation();
 
 
 

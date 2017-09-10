@@ -70,7 +70,7 @@ public class Pack5 extends Activity {
         qp5.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                packs = 5;
+                traffic.packs = 5;
                 Intent i = new Intent(Pack5.this, traffic.class);
                 startActivity(i);
             }
