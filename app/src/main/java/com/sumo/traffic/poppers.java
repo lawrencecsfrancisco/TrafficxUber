@@ -133,6 +133,9 @@ public class poppers extends AppCompatActivity {
         pasok = 0;
 
     }
+    public void closez(View view) {
+    finish();
+    }
 
     int mayexisting, pasok = 0;
 
@@ -289,7 +292,7 @@ public class poppers extends AppCompatActivity {
                         } else {
                             alarm.put(ApplicationConstants.HOUR, "00");
                             alarm.put(ApplicationConstants.MINUTE, "00");
-                            traffic.alarmClocks.add(alarm);
+                          // traffic.alarmClocks.add(alarm);
                             Toast.makeText(this, "No alarm ", Toast.LENGTH_SHORT).show();
                         }
 
@@ -364,7 +367,7 @@ public class poppers extends AppCompatActivity {
                     } else {
                         alarm.put(ApplicationConstants.HOUR, "00");
                         alarm.put(ApplicationConstants.MINUTE, "00");
-                        traffic.alarmClocks.add(alarm);
+                       // traffic.alarmClocks.add(alarm);
                         Toast.makeText(this, "No alarm ", Toast.LENGTH_SHORT).show();
                     }
 

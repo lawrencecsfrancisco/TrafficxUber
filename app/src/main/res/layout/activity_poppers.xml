@@ -301,7 +301,7 @@ android:layout_margin="5dp"
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Submit"
+                android:text="Add Alarm on this destination"
                 android:id="@+id/button"
 
                 android:onClick="saveDestination"
@@ -310,8 +310,24 @@ android:layout_margin="5dp"
 
 
     </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="CLOSE"
+            android:id="@+id/button2"
+
+            android:onClick="closez"
+            android:nestedScrollingEnabled="false" />
+    </LinearLayout>
+
 
 </LinearLayout>
+
+
 
 
 
