@@ -1365,7 +1365,7 @@ public class traffic extends FragmentActivity implements LocationListener, OnMap
         // String traf = "&departure_time=now";
         int i;
         if (points.size() > 2) {
-            waypoints = "waypoints=optimize:true";
+            waypoints = "waypoints=optimize:false";
             for (i = 1; i < points.size() - 1; i++) {
                 String Temp = URLEncoder.encode("|", "UTF-8") + points.get(i).latitude + "," + points.get(i).longitude;
                 waypoints = waypoints.concat(Temp);
