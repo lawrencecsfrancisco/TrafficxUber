@@ -192,9 +192,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
 
-                tools:context="com.sumo.traffic.traffic"
+                android:layout_alignParentStart="true"
                 android:layout_alignParentTop="true"
-                android:layout_alignParentStart="true" />
+                tools:context="com.sumo.traffic.traffic" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -208,8 +208,19 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_weight="1.4"
+                    android:orientation="vertical">
 
-                    android:layout_weight="1.4">
+                    <ImageButton
+                        android:id="@+id/button9"
+                        android:layout_width="55dp"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="5dp"
+
+                        android:background="@drawable/rounds"
+                        android:onClick="revise"
+                        android:padding="5dp"
+                        android:src="@drawable/optimizes" />
 
                     <com.github.clans.fab.FloatingActionButton
                         android:id="@+id/Plot"
@@ -262,8 +273,6 @@
                         fab:menu_labels_singleLine="true">
 
 
-
-
                         <com.github.clans.fab.FloatingActionButton
                             android:id="@+id/fab2"
                             android:layout_width="wrap_content"
@@ -296,19 +305,23 @@
                 </LinearLayout>
 
             </LinearLayout>
+
             <LinearLayout
+                android:id="@+id/linearLayout"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:gravity="center"
-                >
-            <com.uber.sdk.android.rides.RideRequestButton
-                android:id="@+id/button8"
-               android:textAlignment="center"
-                android:layout_width="match_parent"
-                android:visibility="gone"
-                android:layout_height="wrap_content"
-                android:text="Button" />
+                android:gravity="center">
+
+                <com.uber.sdk.android.rides.RideRequestButton
+                    android:id="@+id/button8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Button"
+                    android:textAlignment="center"
+                    android:visibility="gone" />
             </LinearLayout>
+
+
         </RelativeLayout>
 
 
