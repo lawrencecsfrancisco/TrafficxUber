@@ -188,7 +188,6 @@ public class Packagesets extends AppCompatActivity implements View.OnClickListen
                             startActivity(intent);
                             packages = 1;
                         }
-
                         break;
 
                     case 2:
@@ -197,13 +196,12 @@ public class Packagesets extends AppCompatActivity implements View.OnClickListen
                             bottomline.setVisibility(View.VISIBLE);
                         } else {
                             Intent intent = new Intent(this,Pack2.class);
-                            packages = 1;
+
                             // Intent intent = new Intent(this, ChoicesOfPlace.class);
                             startActivity(intent);
+                            packages = 2;
                             // packages = 0;
-
                         }
-
                         break;
 
                     case 3:
@@ -212,10 +210,10 @@ public class Packagesets extends AppCompatActivity implements View.OnClickListen
                         }
                         else {
                             Intent intent = new Intent(this,Pack3.class);
-                            packages = 1;
+
                             //  Intent intent = new Intent(this, traffic.class);
                             startActivity(intent);
-                            //packages = 3;
+                            packages = 3;
                         }
                         break;
 
@@ -225,10 +223,9 @@ public class Packagesets extends AppCompatActivity implements View.OnClickListen
                         }
                         else {
                             Intent intent = new Intent(this,Pack4.class);
-                            packages = 1;
                             //  Intent intent = new Intent(this, traffic.class);
                             startActivity(intent);
-                            //packages = 3;
+                            packages = 4;
                         }
                         break;
 
@@ -238,10 +235,9 @@ public class Packagesets extends AppCompatActivity implements View.OnClickListen
                         }
                         else {
                             Intent intent = new Intent(this,Pack5.class);
-                            packages = 1;
                             //  Intent intent = new Intent(this, traffic.class);
                             startActivity(intent);
-                            //packages = 3;
+                            packages = 5;
                         }
                         break;
                     case 6:
@@ -275,7 +271,7 @@ public class Packagesets extends AppCompatActivity implements View.OnClickListen
                 } else {
                     Intent intent = new Intent(this, Pack2.class);
                     startActivity(intent);
-                    packages = 1;
+                    packages = 2;
 
                 }
                 break;
@@ -287,7 +283,7 @@ public class Packagesets extends AppCompatActivity implements View.OnClickListen
                 } else {
                     Intent intent = new Intent(this, Pack3.class);
                     startActivity(intent);
-                    packages = 1;
+                    packages = 3;
 
                 }
                 break;
@@ -299,7 +295,7 @@ public class Packagesets extends AppCompatActivity implements View.OnClickListen
                 } else {
                     Intent intent = new Intent(this, Pack4.class);
                     startActivity(intent);
-                    packages = 1;
+                    packages = 4;
 
                 }
                 break;
@@ -310,7 +306,7 @@ public class Packagesets extends AppCompatActivity implements View.OnClickListen
                 } else {
                     Intent intent = new Intent(this, Pack5.class);
                     startActivity(intent);
-                    packages = 1;
+                    packages = 5;
 
                 }
                 break;
@@ -546,3 +542,4 @@ public class Packagesets extends AppCompatActivity implements View.OnClickListen
     }
 
 }
+
