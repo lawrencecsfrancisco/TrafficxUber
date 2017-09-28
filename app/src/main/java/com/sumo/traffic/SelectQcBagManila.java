@@ -1,10 +1,11 @@
 package com.sumo.traffic;
 
+import android.animation.Animator;
+import android.animation.ValueAnimator;
 import android.content.Context;
 import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
-import android.support.v4.app.Fragment;
 import android.support.v4.view.GestureDetectorCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
@@ -12,22 +13,22 @@ import android.view.GestureDetector;
 import android.view.LayoutInflater;
 import android.view.MotionEvent;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.ScrollView;
+import android.widget.TextView;
 
 import com.sumo.traffic.Helpers.HelperView;
 
-import android.animation.*;
-import android.view.ViewGroup;
-import android.widget.ScrollView;
-import android.widget.TextView;
-import android.widget.Toast;
+/**
+ * Created by Amos on 9/25/2017.
+ */
+public class SelectQcBagManila extends AppCompatActivity implements View.OnClickListener, GestureDetector.OnGestureListener {
 
-
-public class TemplateOrChoices extends AppCompatActivity implements View.OnClickListener, GestureDetector.OnGestureListener {
-
-    Context mContext = TemplateOrChoices.this;
+    static int bg, manila, qc;
+    Context mContext = SelectQcBagManila.this;
     private LinearLayout tilesContainer;
     private ScrollView mainScrollView;
     private int[] colors = new int[5];
@@ -41,19 +42,22 @@ public class TemplateOrChoices extends AppCompatActivity implements View.OnClick
     private GestureDetectorCompat detector;
     private Toolbar appBar;
     private String[] messages = {
-            "Quezon City",
-            "Itinerary Sets",   //Top Downloads , Top Viewed
-            "Itinerary Creator"
-            //    "Free Mode"
+            "Traveler's Automated Route Application",
+            "Quezon City",   //Top Downloads , Top Viewed
+            "Manila",
+            "Baguio City",
+            "Free Mode"
             // "Send Feedback",
             //  "Contact Us"
     };
 
     private String[] tagLines = {
-            "Welcome to Quezon city, Please have a look at what we offer. \n Slide down to select which mode you prefer.",
-            "These are Set of itineraries that contains different variety of destination, You just select any of the Set and you are ready to go.",
-            "Allows the user to freely build and create itinerary by selecting destinations."
-            //   "Map only? Filter the places you want to explore and make them your destination."
+            "Hello, Welcome to TARA. Please have a look at what we offer. \n Select which City Destination you prefer.",
+            "The City of Stars",
+            "The Queen City of the Pacific",
+            "The Summer Capital of the Philippines",
+            "Map only? Filter the places you want to explore and make them your destination."
+
     };
 
 
@@ -98,14 +102,15 @@ public class TemplateOrChoices extends AppCompatActivity implements View.OnClick
     public void addTilesToContainer() {
         View tileView;
         int[] images = {
+                R.drawable.img_frontliner,
                 R.drawable.package_qc,
-                R.drawable.img_destmo,
-                R.drawable.img_itinerary,
-                //     R.drawable.img_freemode,
+                R.drawable.package_manila,
+                R.drawable.package_baguio,
+                R.drawable.img_freemode,
                 //   R.drawable.image_five
         };
 
-        int numberOfTiles = 3;
+        int numberOfTiles = 5;
         for (int i = 0; i < numberOfTiles; i++) {
             if (i == 0) {
                 tileView = LayoutInflater.from(mContext).inflate(R.layout.team_or_choi_chanel, null);
@@ -178,9 +183,10 @@ public class TemplateOrChoices extends AppCompatActivity implements View.OnClick
                         if (tilesContainer.getChildAt(1).getLayoutParams().height != firstChildHeight) {
                             downToUpScroll(HelperView.getCurrentView(), HelperView.getFollowingView());
                         } else {
-                            Intent intent = new Intent(this, Packagesets.class);
+                            Intent intent = new Intent(this, TemplateOrChoices.class);
                             startActivity(intent);
-                            packages = 1;
+                            qc = 1;
+
                         }
 
                         break;
@@ -190,26 +196,33 @@ public class TemplateOrChoices extends AppCompatActivity implements View.OnClick
                             downToUpScroll(HelperView.getCurrentView(), HelperView.getFollowingView());
                             bottomline.setVisibility(View.VISIBLE);
                         } else {
-                            Intent intent = new Intent(this, ChoicesOfPlace.class);
+                            Intent intent = new Intent(this, TemplateOrChoices_manila.class);
                             startActivity(intent);
-                            packages = 0;
+                            manila = 1;
+
 
                         }
 
                         break;
 
                     case 3:
-                /*        if (tilesContainer.getChildAt(3).getLayoutParams().height != firstChildHeight) {
+                        if (tilesContainer.getChildAt(3).getLayoutParams().height != firstChildHeight) {
                             downToUpScroll(HelperView.getCurrentView(), HelperView.getFollowingView());
-                        }
-                        else {
-                            Intent intent = new Intent(this, traffic.class);
+                        } else {
+                            Intent intent = new Intent(this, TemplateOrChoices_baguio.class);
                             startActivity(intent);
-                            packages = 3;
-                        }*/
+                            bg = 1;
+                        }
                         break;
 
                     case 4:
+                        if (tilesContainer.getChildAt(3).getLayoutParams().height != firstChildHeight) {
+                            downToUpScroll(HelperView.getCurrentView(), HelperView.getFollowingView());
+                        } else {
+                            Intent intent = new Intent(this, traffic.class);
+                            startActivity(intent);
+                            packages = 3;
+                        }
                         break;
                 }
             }
@@ -225,7 +238,7 @@ public class TemplateOrChoices extends AppCompatActivity implements View.OnClick
                 if (tilesContainer.getChildAt(1).getLayoutParams().height != firstChildHeight) {
                     downToUpScroll(HelperView.getCurrentView(), HelperView.getFollowingView());
                 } else {
-                    Intent intent = new Intent(this, Packagesets.class); //ChoicesOfPackage
+                    Intent intent = new Intent(this, TemplateOrChoices.class); //ChoicesOfPackage
                     startActivity(intent);
                     finish();
                     packages = 1;
@@ -238,7 +251,7 @@ public class TemplateOrChoices extends AppCompatActivity implements View.OnClick
                     downToUpScroll(HelperView.getCurrentView(), HelperView.getFollowingView());
                     bottomline.setVisibility(View.VISIBLE);
                 } else {
-                    Intent intent = new Intent(this, ChoicesOfPlace.class);
+                    Intent intent = new Intent(this, TemplateOrChoices_manila.class);
                     startActivity(intent);
                     packages = 0;
 
@@ -246,18 +259,25 @@ public class TemplateOrChoices extends AppCompatActivity implements View.OnClick
                 break;
 
             case "3":
-       /*         if (tilesContainer.getChildAt(3).getLayoutParams().height != firstChildHeight) {
+                if (tilesContainer.getChildAt(3).getLayoutParams().height != firstChildHeight) {
                     downToUpScroll(HelperView.getCurrentView(), HelperView.getFollowingView());
                     bottomline.setVisibility(View.VISIBLE);
+                } else {
+                    Intent intent = new Intent(this, TemplateOrChoices_baguio.class);
+                    startActivity(intent);
+                    packages = 3;
+
+                }
+                break;
+
+            case "4":
+                if (tilesContainer.getChildAt(3).getLayoutParams().height != firstChildHeight) {
+                    downToUpScroll(HelperView.getCurrentView(), HelperView.getFollowingView());
                 } else {
                     Intent intent = new Intent(this, traffic.class);
                     startActivity(intent);
                     packages = 3;
-
-                }*/
-                break;
-
-            case "4":
+                }
                 break;
         }
     }

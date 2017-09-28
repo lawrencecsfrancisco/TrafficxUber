@@ -23,7 +23,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="BEST PLACES IN QUEZON CITY"
+            android:text="List of Best Places"
             android:textAlignment="center"
             android:textColor="#383732"
             android:textSize="20dp"

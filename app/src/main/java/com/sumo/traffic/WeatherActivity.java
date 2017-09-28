@@ -278,7 +278,7 @@ public class WeatherActivity extends Activity {
 
     public void gogo(View view)
     {
-        Intent i = new Intent(WeatherActivity.this, TemplateOrChoices   .class);
+        Intent i = new Intent(WeatherActivity.this, SelectQcBagManila.class);
         startActivity(i);
         finish();
     }

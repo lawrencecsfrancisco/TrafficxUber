@@ -1,7 +1,8 @@
-package com.sumo.traffic.InfoOfPlaces_Manila;
+package com.sumo.traffic.InfoOfPlaces_Baguio;
 
 import android.app.AlertDialog;
 import android.app.ProgressDialog;
+import android.content.Context;
 import android.content.Intent;
 import android.graphics.drawable.BitmapDrawable;
 import android.os.AsyncTask;
@@ -40,14 +41,14 @@ import me.relex.circleindicator.CircleIndicator;
 /**
  * Created by Amos on 1/27/2017.
  */
-public class NationalMuseum extends AppCompatActivity {
+public class WrightPark extends AppCompatActivity {
 
     public static int select;
     RelativeLayout wat;
-
+    Context context;
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.place_manila_nationalmusuem);
+        setContentView(R.layout.place_baguio_wrightpark);
 
 /*        if (ChoicesOfPlace.open == 1) {
             DisplayMetrics dm = new DisplayMetrics();
@@ -119,7 +120,7 @@ public class NationalMuseum extends AppCompatActivity {
         @Override
         protected String doInBackground(Void... args) {
             String url = "https://maps.googleapis.com/maps/api/place/details/json?placeid="
-                    + "ChIJa5tW0CPKlzMRKuDqk7sMx88" + "&key=AIzaSyDK1zxUEp38e6sQYzJq6qGNKxdOUqUZR1Y";
+                    + "ChIJHVAPuaqmkTMRsGjxiLAaDNY" + "&key=AIzaSyDK1zxUEp38e6sQYzJq6qGNKxdOUqUZR1Y";
             JSONParser jsonParser = new JSONParser();
             String json = jsonParser.getJSONFromUrl(url);
             return json;
@@ -144,7 +145,7 @@ public class NationalMuseum extends AppCompatActivity {
                     } else profilePictureUrl.put(authorName,null);
                     authorTexts.add(singleReviews.getString("text"));
                 }
-                layoutManager = new LinearLayoutManager(NationalMuseum.this);
+                layoutManager = new LinearLayoutManager(context);
                 recyclerView.setLayoutManager(layoutManager);
                 recyclerAdapter = new RecyclerAdapter(reviewAuthorNames, profilePictureUrl, authorTexts, reviewRating);
                 recyclerView.setAdapter(recyclerAdapter);

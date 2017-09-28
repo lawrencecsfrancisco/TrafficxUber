@@ -25,6 +25,18 @@ import com.sumo.traffic.InfoOfPlaces.InfoOfQmc;
 import com.sumo.traffic.InfoOfPlaces.InfoOfUp;
 import com.sumo.traffic.InfoOfPlaces.InfoOfVargas;
 import com.sumo.traffic.InfoOfPlaces.InfoOfWatershed;
+import com.sumo.traffic.InfoOfPlaces_Manila.BahayTsinoy;
+import com.sumo.traffic.InfoOfPlaces_Manila.CCP;
+import com.sumo.traffic.InfoOfPlaces_Manila.CasaManila;
+import com.sumo.traffic.InfoOfPlaces_Manila.FilipinoChinese;
+import com.sumo.traffic.InfoOfPlaces_Manila.Luneta;
+import com.sumo.traffic.InfoOfPlaces_Manila.ManilaCathedral;
+import com.sumo.traffic.InfoOfPlaces_Manila.NationalMuseum;
+import com.sumo.traffic.InfoOfPlaces_Manila.NayongFilipino;
+import com.sumo.traffic.InfoOfPlaces_Manila.PacoPark;
+import com.sumo.traffic.InfoOfPlaces_Manila.SanAgustinChurch;
+import com.sumo.traffic.InfoOfPlaces_Manila.coconutpalace;
+import com.sumo.traffic.InfoOfPlaces_Manila.starcity;
 
 
 public class MyHolder2 extends RecyclerView.ViewHolder implements View.OnClickListener {
@@ -51,56 +63,46 @@ public class MyHolder2 extends RecyclerView.ViewHolder implements View.OnClickLi
         switch (getAdapterPosition()){
 
             case 0:
-                intent = new Intent(context, InfoOfQmc.class);
-
-
+                intent = new Intent(context, NationalMuseum.class);
 
                 break;
             case 1:
-                intent =  new Intent(context, InfoOfNinoy.class);
+                intent =  new Intent(context, FilipinoChinese.class);
                 break;
             case 2:
-                intent =  new Intent(context, InfoOfDam.class);
+                intent =  new Intent(context, NayongFilipino.class);
                 break;
             case 3:
-                intent =  new Intent(context, InfoOfVargas.class);
+                intent =  new Intent(context, BahayTsinoy.class);
                 break;
             case 4:
-                intent =  new Intent(context, InfoOfEdsa.class);
+                intent =  new Intent(context, SanAgustinChurch.class);
                 break;
             case 5:
-                intent =  new Intent(context, InfoOfArt.class);
+                intent =  new Intent(context, ManilaCathedral.class);
                 break;
             case 6 :
-                intent =  new Intent(context, InfoOfCOF.class);
+                intent =  new Intent(context, CasaManila.class);
                 break;
             case 7:
-                intent =  new Intent(context, InfoOfBayani.class);
+                intent =  new Intent(context, Luneta.class);
                 break;
 
             case 8:
-                intent =  new Intent(context, InfoOfPeople.class);
+                intent =  new Intent(context, CCP.class);
                 break;
             case 9:
-                intent =  new Intent(context, InfoOfAteneo.class);
+                intent =  new Intent(context, PacoPark.class);
                 break;
 
 
             case 10:
-                intent =  new Intent(context, InfoOfWatershed.class);
+                intent =  new Intent(context, starcity.class);
                 break;
             case 11:
-                intent =  new Intent(context, InfoOfParish.class);
+                intent =  new Intent(context, coconutpalace.class);
                 break;
-            case 12:
-                intent =  new Intent(context, InfoOfEast.class);
-                break;
-            case 13:
-                intent =  new Intent(context, InfoOfMaginhawa.class);
-                break;
-            case 14:
-                intent =  new Intent(context, InfoOfUp.class);
-                break;
+
             default:
                 intent =  new Intent(context, tests.class);
                 break;

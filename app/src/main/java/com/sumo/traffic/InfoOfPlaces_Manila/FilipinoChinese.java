@@ -59,8 +59,6 @@ public class FilipinoChinese extends AppCompatActivity {
             getWindow().setLayout((int)(width*.8),(int)(height*.8));
         }*/
 
-        wat = (RelativeLayout) findViewById(R.id.hiders);
-        wat.setVisibility(View.GONE);
 
 
         recyclerView = (RecyclerView) findViewById(R.id.recyclerView);
@@ -77,7 +75,7 @@ public class FilipinoChinese extends AppCompatActivity {
 
         select = 1;
         Toast.makeText(getApplicationContext(), "You added this as One of your Destination", Toast.LENGTH_LONG).show();
-        wat.setVisibility(View.VISIBLE);
+
 
     }
 

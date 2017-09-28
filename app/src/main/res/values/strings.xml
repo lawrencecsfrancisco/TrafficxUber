@@ -144,7 +144,7 @@
     <string name="p5">Package 5</string>
     <string name="p5_desc">TARA offers package 5, which consists of different tourist attractions. From nature wonders to interesting historic sites, museums and once-in-a-lifetime experiences. Check out the following tourist attractions in Quezon City, Philippines.</string>
     <string name="sining">Sining Kamalig</string>
-    <string name="desc_sining">Sining Kamalig is a gallery of contemporary art. Drop by to enjoy the beautiful and interesting changing exhibition of Flipino artists.</string>
+    <string name="desc_sining">Sining Kamalig is a gallery of contemporary art. Drop by to enjoy the beautiful and interesting changing exhibition of Filipino artists.</string>
     <string name="fernwood">Fernwood Gardens</string>
     <string name="desc_fernwood">The best garden wedding venue in the Philippines today. The most popular wedding events venue here in Metro Manila.</string>
     <string name="armed">Armed Forces Museum</string>
@@ -153,6 +153,145 @@
     <string name="desc_mystery">Mystery Manila is the first live role playing game in the Philippines. It is an activity that allows people to try something new and challenging.</string>
     <string name="monasterio">Monasterio de Santa Clara</string>
     <string name="desc_monasterio">A place that is very peaceful. You can pray and praise God. A place where you can talk to God and solemnly worship.</string>
+
+
+
+
+    <!--Baguio-->
+    <!--P1-->
+    <string name="burnham">Burnham Park</string>
+    <string name="desc_burnham">The park was a central feature of Baguio when the city was first planned and developed as a retreat for the US military, and remains today as a beloved landmark.</string>
+    <string name="bgcathedral">Baguio Cathedral</string>
+    <string name="desc_bgcathedral">This beautiful structure has twin spires and is one of the most photographed buildings in the city.</string>
+    <string name="grotto">Lourdes Grotto</string>
+    <string name="desc_grotto">The grotto is a favorite pilgrimage site during Holy Week most especially during Holy Thursday and Good Friday. Access to the top of the grotto could be made by climbing the 252 steps.</string>
+    <string name="minesview">Mines View Park</string>
+    <string name="desc_minesview">From the observation deck of the park a breathtaking panoramic view of Benguet gold and copper mines and the surrounding mountains unfolds before you. </string>
+    <string name="masion">The Mansion</string>
+    <string name="desc_masion">The elaborate main gate of the Mansion is said to be a replica of that at Buckingham Palace in London. With its beautiful gardens and a well-manicured lawn, it is a favorite site for sightseeing and picture taking.</string>
+
+    <!--P2-->
+    <string name="garden">Botanical Garden</string>
+    <string name="desc_garden">The village is said to capture the ethnic spirit and cultural legacy of the Igorots and being tranquil and quiet, it is a nice place to just sit down and relax, take a leisurely stroll along its narrow and winding pathways.</string>
+    <string name="wright">Wright Park</string>
+    <string name="desc_wright">Its main features are a shallow elongated rectangular body of water known as the "Pool of Pines" and the park circle which is on one end of the park.</string>
+    <string name="camp">Camp John Hay</string>
+    <string name="desc_camp">Camp John Hay used to be the rest and recreational facility for employees of the military and Department of Defense of the United States.</string>
+    <string name="army">Phil. Military Academy</string>
+    <string name="desc_army">The Philippine Military Academy (PMA) boasts of a long and illustrious history of preparing only the best Filipino men and in recent times, women for military service.</string>
+    <string name="berry">Strawberry Farm</string>
+    <string name="desc_berry">Picking fresh strawberries is one of the most awesome experiences on the outskirts of Baguio. It is a fun activity for your family, especially for the kids.</string>
+
+    <!--P3-->
+    <string name="bencab">Bencab Musuem</string>
+    <string name="desc_bencab">Artworks by BenCab and other noted Filipino artists, plus indigenous northern highlands exhibits.</string>
+    <string name="good">Good Shepherd</string>
+    <string name="desc_good">This is the center of the compound where you will usually find people waiting to be served by the salesclerks of a small store.</string>
+    <string name="countryclub">Baguio Country Club</string>
+    <string name="desc_countryclub">The Baguio Country Club hails from an immensely rich history of more than one hundred colorful years in the hospitality industry. </string>
+    <string name="session">Session Road</string>
+    <string name="desc_session">Session Road is the main thoroughfare of Baguio City and its commercial center, with a variety of shops, stores and offices lining each side. </string>
+    <string name="bell">Bell House</string>
+    <string name="desc_bell">Bell House, historic vacation home, surrounded by a nice manicured garden and pine trees at Camp John Hay Historical Core.</string>
+
+    <!--P4-->
+    <string name="bagmuseum">Baguio Museum</string>
+    <string name="desc_bagmuseum">Small museum with displays and artifacts related to local indigenous groups and the history of the city.</string>
+    <string name="treetop">Tree Top Adventure</string>
+    <string name="desc_treetop">Adventure park offering zip-lining courses along with treetop climbs and cable car rides.</string>
+    <string name="tamawan">Tam-Awan Village</string>
+    <string name="desc_tamawan"></string>
+    <string name="asin">Asin Hot Spring</string>
+    <string name="desc_asin">These are natural beauties that can satisfy our love for nature. The natural hot water in Asin bubbles up from the below the ground continuously.</string>
+    <string name="lion">Lion\'s Head</string>
+    <string name="desc_lion">It is commonly said that a trip to Baguio City would not be complete without taking home a souvenir photograph with the famous lion head which serves as the backdrop on Kennon Road.</string>
+
+    <!--P5-->
+    <string name="dominical">Dominican Hill</string>
+    <string name="desc_dominical">Dominican Hill was usually the next stop for visitors who go to the Lourdes Grotto since it was just nearby. The hill was well visited not only by local and foreign tourists but also by the residents of Baguio because of the panoramic view it provided of the city.</string>
+    <string name="bellchurch">Bell Church</string>
+    <string name="desc_bellchurch">The Bell Church is located north of the downtown area of Baguio along the road leading to the town of La Trinidad, Benguet. Within its compound are intricately designed arches and buildings adorned with flags, bells and dragons.</string>
+    <string name="teacher">Teacher\'s Camp</string>
+    <string name="desc_teacher">he camp is a training center for teachers from all over the country who come to Baguio during the summer time to enroll in special courses in education.</string>
+    <string name="orc">Orchidarium</string>
+    <string name="desc_orc">The Baguio City Orchidarium is the place for fresh plants that are sold at an affordable price.</string>
+    <string name="kennon">Kennon Road</string>
+    <string name="desc_kennon">the most popular access to Baguio City, Philippines. There has been no other road that has meant so much happiness for many travelers.</string>
+
+
+
+    <!--Manila-->
+    <!--P1-->
+    <string name="luneta">Luneta Park</string>
+    <string name="desc_luneta">Rizal Park, also known as Luneta Park, is a historic urban park located in the heart of Manila, the capital city of the Philippines.</string>
+    <string name="casa">Casa Manila</string>
+    <string name="desc_casa">Casa Manila Museum chronicles the social history of Manila during the Spanish Colonial era.</string>
+    <string name="manilacathedral">Manila Cathedral</string>
+    <string name="desc_manilacathedral">Officially known as the Manila Metropolitan Cathedral-Basilica, it is the seat of the Archibishop of the Archdiocese of Manila, who is normally regarded as the Roman Catholic Primate of the Philippines.</string>
+    <string name="american">Manila American Cemetery</string>
+    <string name="desc_american">The Manila American Cemetery in Manila. A final resting place for those that gave the ultimate sacrifice.</string>
+    <string name="intramuros">Intramuros</string>
+    <string name="desc_intramuros">The historic centre and oldest district of Manila, the capital city of the Philippines.</string>
+
+    <!--P2-->
+
+    <string name="bahay">Bahay Tsinoy</string>
+    <string name="desc_bahay">The Bahay Tsinoy Museum is a don\'t-miss stop for history-minded visitors to Manila and for those of Chinese heritage.</string>
+    <string name="plaza">Plaza de Armas</string>
+    <string name="desc_plaza">The Plaza de Armas is a public square in Intramuros, Manila. It is one of two major plazas in Intramuros, the other being the central Plaza de Roma and is the central plaza of Fort Santiago.</string>
+    <string name="chinatown">Chinatown</string>
+    <string name="desc_chinatown">Binondo is the "Chinatown" district in Manila. It became the center of commerce during the American occupation.</string>
+    <string name="manilabay">Manila Bay</string>
+    <string name="desc_manilabay">Manila Bay is a natural harbour which serves the Port of Manila (on Luzon), in the Philippines.</string>
+    <string name="chcemetery">Chinese Cemetery</string>
+    <string name="desc_chcemetery">Manila Chinese Cemetery is like stepping into another dimension in time that is both Chinese and Filipino.</string>
+
+
+    <!--P3-->
+    <string name="quiapo">Quiapo Church</string>
+    <string name="desc_quiapo">One of Manila’s best-known landmarks, Quiapo is the home of the Black Nazarene, an image of Christ believed to be miraculous.</string>
+    <string name="sebastian">San Sebastian Church</string>
+    <string name="desc_sebastian">The San Sebastian Church in Manila, Philippines was the first all-iron church in the world; the first all-iron structure in Asia.</string>
+    <string name="ayalatriangle">Ayala Triangle Gardens</string>
+    <string name="desc_ayala">Ayala Triangle Gardens is the ideal spot for people who want to distance themselves from the everyday hustle bustle to relax, unwind and get in touch with nature.</string>
+    <string name="moa">Mall of Asia</string>
+    <string name="desc_moa">SM Mall of Asia is a tourist destination that has raised the standard of shopping, leisure and entertainment in the Philippines.</string>
+
+
+    <!--P4-->
+    <string name="manilazoo">Manila Zoo</string>
+    <string name="desc_manilazoo"> It serves as one of the educational centers in the country where the viewing public can observe, discover and learn interesting facts about the beauty of Philippine fauna and flora.</string>
+    <string name="cultural">Cultural Center</string>
+    <string name="desc_cultural">This is basically the place where every Filipino dancer would want to perform, where every Filipino indie movie director would want to showcase his film, and where every Filipino opera singer would want to sing his heart out.</string>
+    <string name="paco">Paco Park</string>
+    <string name="desc_paco">Paco Park was originally designed as a municipal cemetery for the affluent and aristocratic families during the Spanish era.</string>
+    <string name="agustin">San Agustin Church</string>
+    <string name="desc_agustin">The oldest church in the Philippines. The massive facade conceals an ornate interior filled with objects of great historical and cultural merit.</string>
+
+    <!--P5-->
+    <string name="star">Star City</string>
+    <string name="desc_star">Star City is the Philippines\' only all-weather, air-conditioned amusement park.It is now bigger and better with its new expansion that comes with 3 new classic rides and more attractions on the way.</string>
+    <string name="nationalart">National Musuem of the Philippines</string>
+    <string name="desc_nationalart">The National Museum of the Philippines is the repository and guardian of the Philippines\' natural and cultural heritage.</string>
+    <string name="coconut">Coconut Palace</string>
+    <string name="desc_coconut">The Coconut Palace was one of Imelda Marcos\' great white elephant projects in the 1970s. It was so named because of the extensive use of coconut building materials in its construction.</string>
+    <string name="ocean">Manila Ocean Park</string>
+    <string name="desc_ocean">Manila Ocean Park is the country\'s first world-class marine theme park and a premiere educational facility.</string>
+    <string name="pambata">Museo Pambata</string>
+    <string name="desc_pambata">The Museo Pambata is a children\'s interactive museum, the first of its kind in the Philippines. It is in a sense an alternative to the formal classroom environment where learning resembles a one-way street.</string>
+
+
+    <string name="p1_descbag">TARA offers package 1, which consists of different tourist attractions. From nature wonders to interesting historic sites, museums and once-in-a-lifetime experiences. Check out the following tourist attractions in Baguio City, Philippines.</string>
+    <string name="p2_descbag">TARA offers package 2, which consists of different tourist attractions. From nature wonders to interesting historic sites, museums and once-in-a-lifetime experiences. Check out the following tourist attractions in Baguio City, Philippines.</string>
+    <string name="p3_descbag">TARA offers package 3, which consists of different tourist attractions. From nature wonders to interesting historic sites, museums and once-in-a-lifetime experiences. Check out the following tourist attractions in Baguio City, Philippines.</string>
+    <string name="p4_descbag">TARA offers package 4, which consists of different tourist attractions. From nature wonders to interesting historic sites, museums and once-in-a-lifetime experiences. Check out the following tourist attractions in Baguio City, Philippines.</string>
+    <string name="p5_descbag">TARA offers package 5, which consists of different tourist attractions. From nature wonders to interesting historic sites, museums and once-in-a-lifetime experiences. Check out the following tourist attractions in Baguio City, Philippines.</string>
+
+    <string name="p1_descman">TARA offers package 1, which consists of different tourist attractions. From nature wonders to interesting historic sites, museums and once-in-a-lifetime experiences. Check out the following tourist attractions in Manila City, Philippines.</string>
+    <string name="p2_descman">TARA offers package 1, which consists of different tourist attractions. From nature wonders to interesting historic sites, museums and once-in-a-lifetime experiences. Check out the following tourist attractions in Manila City, Philippines.</string>
+    <string name="p3_descman">TARA offers package 1, which consists of different tourist attractions. From nature wonders to interesting historic sites, museums and once-in-a-lifetime experiences. Check out the following tourist attractions in Manila City, Philippines.</string>
+    <string name="p4_descman">TARA offers package 1, which consists of different tourist attractions. From nature wonders to interesting historic sites, museums and once-in-a-lifetime experiences. Check out the following tourist attractions in Manila City, Philippines.</string>
+    <string name="p5_descman">TARA offers package 1, which consists of different tourist attractions. From nature wonders to interesting historic sites, museums and once-in-a-lifetime experiences. Check out the following tourist attractions in ManilaCity, Philippines.</string>
 
 </resources>
 

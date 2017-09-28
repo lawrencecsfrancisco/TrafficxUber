@@ -228,7 +228,110 @@
         </activity>
         <activity android:name=".Pack5">
         </activity>
-        
+
+
+
+
+        <activity android:name=".Pack1_manila">
+        </activity>
+        <activity android:name=".Pack2_manila">
+        </activity>
+        <activity android:name=".Pack3_manila">
+        </activity>
+        <activity android:name=".Pack4_manila">
+        </activity>
+        <activity android:name=".Pack5_manila">
+        </activity>
+        <activity android:name=".Packagesets_manila">
+        </activity>
+
+        <activity android:name=".Pack1_baguio">
+        </activity>
+        <activity android:name=".Pack2_baguio">
+        </activity>
+        <activity android:name=".Pack3_baguio">
+        </activity>
+        <activity android:name=".Pack4_baguio">
+        </activity>
+        <activity android:name=".Pack5_baguio">
+        </activity>
+
+        <activity android:name=".Packagesets_baguio"></activity>
+
+        <activity android:name=".ChoicesOfPlace_Manila"></activity>
+        <activity android:name=".ChoicesOfBaguio"></activity>
+        <activity android:name=".ReviewChoiceOfPlace_Manila"></activity>
+        <activity android:name=".ReviewChoiceOfPlace_Baguio"></activity>
+
+
+
+        <activity android:name=".SelectQcBagManila">
+        </activity>
+
+        <activity android:name=".TemplateOrChoices_baguio"></activity>
+        <activity android:name=".TemplateOrChoices_manila"></activity>
+
+
+        <activity
+            android:name=".InfoOfPlaces_Manila.BahayTsinoy"
+            android:label="Sample"
+            android:theme="@style/AppTheme.CustomStyle" />
+        <activity
+            android:name=".InfoOfPlaces_Manila.CasaManila"
+            android:label="Sample"
+            android:theme="@style/AppTheme.CustomStyle" />
+        <activity
+            android:name=".InfoOfPlaces_Manila.CCP"
+            android:label="Sample"
+            android:theme="@style/AppTheme.CustomStyle" />
+        <activity
+            android:name=".InfoOfPlaces_Manila.coconutpalace"
+            android:label="Sample"
+            android:theme="@style/AppTheme.CustomStyle" />
+        <activity
+            android:name=".InfoOfPlaces_Manila.FilipinoChinese"
+            android:label="Sample"
+            android:theme="@style/AppTheme.CustomStyle" />
+        <activity
+            android:name=".InfoOfPlaces_Manila.Luneta"
+            android:label="Sample"
+            android:theme="@style/AppTheme.CustomStyle" />
+        <activity
+            android:name=".InfoOfPlaces_Manila.ManilaCathedral"
+            android:label="Sample"
+            android:theme="@style/AppTheme.CustomStyle" />
+        <activity
+            android:name=".InfoOfPlaces_Manila.NationalMuseum"
+            android:label="Sample"
+            android:theme="@style/AppTheme.CustomStyle" />
+        <activity
+            android:name=".InfoOfPlaces_Manila.NayongFilipino"
+            android:label="Sample"
+            android:theme="@style/AppTheme.CustomStyle" />
+        <activity
+            android:name=".InfoOfPlaces_Manila.PacoPark"
+            android:label="Sample"
+            android:theme="@style/AppTheme.CustomStyle" />
+        <activity
+            android:name=".InfoOfPlaces_Manila.SanAgustinChurch"
+            android:label="Sample"
+            android:theme="@style/AppTheme.CustomStyle" />
+        <activity
+
+        android:name=".InfoOfPlaces_Manila.starcity"
+        android:label="Sample"
+        android:theme="@style/AppTheme.CustomStyle" />
+
+
+
+
+
+
+
+
+
+
+
         <!--
  ATTENTION: This was auto-generated to add Google Play services to your project for
      App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information.

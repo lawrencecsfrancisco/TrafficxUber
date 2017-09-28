@@ -59,8 +59,6 @@ public class SanAgustinChurch extends AppCompatActivity {
             getWindow().setLayout((int)(width*.8),(int)(height*.8));
         }*/
 
-        wat = (RelativeLayout) findViewById(R.id.hiders);
-        wat.setVisibility(View.GONE);
 
 
         recyclerView = (RecyclerView) findViewById(R.id.recyclerView);

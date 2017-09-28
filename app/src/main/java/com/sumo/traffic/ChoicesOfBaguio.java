@@ -2,12 +2,10 @@ package com.sumo.traffic;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.DefaultItemAnimator;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
-import android.support.v7.widget.SearchView;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.Button;
@@ -16,9 +14,9 @@ import android.widget.RatingBar;
 import java.util.ArrayList;
 
 /**
- * Created by kixkikx on 12/20/2016.
+ * Created by Amos on 9/25/2017.
  */
-public class ChoicesOfPlace_Manila  extends AppCompatActivity {
+public class ChoicesOfBaguio  extends AppCompatActivity {
     //  SearchView sv;
     RatingBar rb;
     public static int open = 0;
@@ -32,7 +30,6 @@ public class ChoicesOfPlace_Manila  extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         fab = (Button) findViewById(R.id.fab);
-
         if (hidethis == 1)
         {
             fab.setVisibility(View.GONE);
@@ -40,16 +37,9 @@ public class ChoicesOfPlace_Manila  extends AppCompatActivity {
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
-
-                Intent i = new Intent (ChoicesOfPlace_Manila.this, ReviewChoiceOfPlace_Manila.class);
+                Intent i = new Intent (ChoicesOfBaguio.this, ReviewChoiceOfPlace.class);
                 startActivity(i);
                 finishAffinity();
-
-
-
-
-
             }
         });
         //    sv = (SearchView) findViewById(R.id.mSearch);
@@ -58,7 +48,7 @@ public class ChoicesOfPlace_Manila  extends AppCompatActivity {
         rv.setLayoutManager(new LinearLayoutManager(this));
         rv.setItemAnimator(new DefaultItemAnimator());
         //ADAPTER
-        final MyAdapter2 adapter = new MyAdapter2(this, getPlayers());
+        final MyAdapter adapter = new MyAdapter(this, getPlayers());
         rv.setAdapter(adapter);
         //SEARCH
 /*        sv.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
@@ -93,69 +83,69 @@ public class ChoicesOfPlace_Manila  extends AppCompatActivity {
     private ArrayList<Places> getPlayers() {
         ArrayList<Places> movies = new ArrayList<>();
         Places p = new Places();
-        p.setName("National Museum");
-        p.setPos("Padre Burgos Ave, Ermita, Manila, Metro Manila");
-        p.setImg(R.drawable.img_national);
+        p.setName("Good Shepherd Place");
+        p.setPos("Gibraltar Rd, Baguio, 2600 Benguet"); //changeIMage - done
+        p.setImg(R.drawable.img_goodshepherd);
         movies.add(p);
         p=new Places();
-        p.setName("Filipino - Chinese Friendship Arch");
-        p.setPos("Quintin Paredes Rd, Binondo, Manila, 1006 Metro Manila");
-        p.setImg(R.drawable.img_chinatown);
+        p.setName("Arca's Yard");
+        p.setPos("Ambuklao Rd, Baguio, Benguet"); //changeImage -done
+        p.setImg(R.drawable.img_arcas);
         movies.add(p);
         p=new Places();
-        p.setName("Nayong Pilipino");
-        p.setPos("1000 Rizal Ave, Ermita, Manila, 1000 Metro Manila");
-        p.setImg(R.drawable.img_goodwill);
+        p.setName("Wright Park");
+        p.setPos("Gibraltar Rd, Baguio, Benguet"); //changeImage -done
+        p.setImg(R.drawable.img_wrightpark);
         movies.add(p);
         p=new Places();
-        p.setName("Bahay Tsinoy");
-        p.setPos("32 Anda St, Intramuros, Manila, Metro Manila");
-        p.setImg(R.drawable.img_dominical);
+        p.setName("Mines View Park");
+        p.setPos("Europa Mines View Condominium Building 2, 2600, Gibraltar Rd, Baguio, Benguet"); //changeImage -done
+        p.setImg(R.drawable.img_minesviewpark);
         movies.add(p);
         p=new Places();
-        p.setName("San Agustin Church");
-        p.setPos("General Luna St, Manila, Metro Manila");
-        p.setImg(R.drawable.img_cathedral);
+        p.setName("The Mansion");
+        p.setPos("The Mansion, Romulo Dr, Baguio, Benguet"); //changeImage -done
+        p.setImg(R.drawable.img_themansion);
         movies.add(p);
         p=new Places();
-        p.setName("Manila Cathedral");
-        p.setPos("Sto. Tomas, Intramuros, Manila, 1002 Metro Manila");
-        p.setImg(R.drawable.img_bgcathedral);
+        p.setName("Diplomat Hotel");
+        p.setPos("Dominican Hill, Diplomat Road, Baguio, 2600 Benguet"); //changeImage  -done
+        p.setImg(R.drawable.img_diplomat);
         movies.add(p);
         p=new Places();
-        p.setName("Casa Manila Intramuros");
-        p.setPos("Intramuros, Manila, Metro Manila");
-        p.setImg(R.drawable.img_intramuros);
+        p.setName("Camp John Hay");
+        p.setPos("Camp John Hay, Ordonio Dr, Baguio, 2600 Benguet"); //changeImage  -done
+        p.setImg(R.drawable.img_campjohn);
         movies.add(p);
         p=new Places();
-        p.setName("Luneta/Rizal Park");
-        p.setPos("Roxas Blvd Ermita, Barangay 666 Zone 72, Manila, 1000 Metro Manila");
-        p.setImg(R.drawable.img_luneta);
+        p.setName("Good Taste Restaurant");
+        p.setPos("Rajah Matanda St, Baguio, Benguet"); //changeImage  --done
+        p.setImg(R.drawable.img_goodtaste);
         movies.add(p);
         p=new Places();
-        p.setName("Cultural Center of the Philippines");
-        p.setPos("CCP Complex, Roxas Boulevard, Magdalena Jalandoni");
-        p.setImg(R.drawable.img_cultural);
+        p.setName("Pink Sister's Convent");
+        p.setPos("Brent Rd, Baguio, Benguet"); //changeImage  --done
+        p.setImg(R.drawable.img_pinksisters);
         movies.add(p);
         p=new Places();
-        p.setName("Paco Park and Cemetery");
-        p.setPos("Belen, Paco, Manila, Metro Manila");
-        p.setImg(R.drawable.img_paco);
+        p.setName("Farmer's Daughter Restaurant"); //changeImage -done
+        p.setPos("Long Long Benguet Rd, Awan Village Baguio, Baguio, 2601 Benguet");
+        p.setImg(R.drawable.img_farmersdaughter);
         movies.add(p);
         p=new Places();
-        p.setName("Star City");
-        p.setPos("Vicente Sotto Street, CCP Complex, Pasay, Metro Manila");
-        p.setImg(R.drawable.img_star);
+        p.setName("Night Market");
+        p.setPos("Harrison Rd, Baguio, Benguet"); //changeImage
+        p.setImg(R.drawable.img_nightmarket);
         movies.add(p);
         p=new Places();
-        p.setName("Coconut Palace");
-        p.setPos("Cultural Center of the Philippines Complex, Roxas Boulevard, Manila");
-        p.setImg(R.drawable.img_coconut);
+        p.setName("STOBOSA Mural Arts");
+        p.setPos("Baguio - La Trinidad - Bontoc Rd, Baguio, 2601 Benguet"); //changeImage
+        p.setImg(R.drawable.img_stobosa);
         movies.add(p);
-
 
 
         return movies;
 
     }
 }
+
