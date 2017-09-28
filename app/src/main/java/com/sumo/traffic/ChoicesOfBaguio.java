@@ -48,7 +48,7 @@ public class ChoicesOfBaguio  extends AppCompatActivity {
         rv.setLayoutManager(new LinearLayoutManager(this));
         rv.setItemAnimator(new DefaultItemAnimator());
         //ADAPTER
-        final MyAdapter adapter = new MyAdapter(this, getPlayers());
+        final MyAdapter3 adapter = new MyAdapter3(this, getPlayers());
         rv.setAdapter(adapter);
         //SEARCH
 /*        sv.setOnQueryTextListener(new SearchView.OnQueryTextListener() {

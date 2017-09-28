@@ -102,7 +102,7 @@ public class Pack1_baguio extends Activity {
                 reviewRating.clear();
                 progressDialog.setMessage("Fetching Data, Please Wait...");
                 progressDialog.show();
-                placeid = "ChIJ5UTioJW3lzMRCVEsXIinoQY";
+                placeid = "ChIJiYLvmGmhkTMR8rwh5qkzitE";
                 FetchReviews fetchReviews = new FetchReviews();
                 fetchReviews.execute();
                 sr1.setVisibility(View.VISIBLE);
@@ -120,7 +120,7 @@ public class Pack1_baguio extends Activity {
                 reviewRating.clear();
                 progressDialog.setMessage("Fetching Data, Please Wait...");
                 progressDialog.show();
-                placeid = "ChIJZyfdAEC2lzMRjdk72SmJsyw";
+                placeid = "ChIJwblPOF2hkTMROOQiH9qxCwg";
                 FetchReviews fetchReviews = new FetchReviews();
                 fetchReviews.execute();
                 sr1.setVisibility(View.VISIBLE);

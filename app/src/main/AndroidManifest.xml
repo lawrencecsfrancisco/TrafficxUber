@@ -317,17 +317,62 @@
             android:label="Sample"
             android:theme="@style/AppTheme.CustomStyle" />
         <activity
-
         android:name=".InfoOfPlaces_Manila.starcity"
         android:label="Sample"
         android:theme="@style/AppTheme.CustomStyle" />
 
 
+        <activity
+            android:name=".InfoOfPlaces_Baguio.ArcaYard"
+            android:label="Sample"
+            android:theme="@style/AppTheme.CustomStyle" />
+        <activity
+            android:name=".InfoOfPlaces_Baguio.CampJohnHay"
+            android:label="Sample"
+            android:theme="@style/AppTheme.CustomStyle" />
 
+        <activity
+            android:name=".InfoOfPlaces_Baguio.DiplomatHotel"
+            android:label="Sample"
+            android:theme="@style/AppTheme.CustomStyle" />
+        <activity
+            android:name=".InfoOfPlaces_Baguio.FarmerDaughterRestaurant"
+            android:label="Sample"
+            android:theme="@style/AppTheme.CustomStyle" />
 
+        <activity
+            android:name=".InfoOfPlaces_Baguio.GoodShepherdPlace"
+            android:label="Sample"
+            android:theme="@style/AppTheme.CustomStyle" />
+        <activity
+            android:name=".InfoOfPlaces_Baguio.GoodTasteRestaurant"
+            android:label="Sample"
+            android:theme="@style/AppTheme.CustomStyle" />
+        <activity
+            android:name=".InfoOfPlaces_Baguio.MinesViewPark"
+            android:label="Sample"
+            android:theme="@style/AppTheme.CustomStyle" />
 
-
-
+        <activity
+            android:name=".InfoOfPlaces_Baguio.NightMarket"
+            android:label="Sample"
+            android:theme="@style/AppTheme.CustomStyle" />
+        <activity
+            android:name=".InfoOfPlaces_Baguio.PinkSisterConvent"
+            android:label="Sample"
+            android:theme="@style/AppTheme.CustomStyle" />
+        <activity
+            android:name=".InfoOfPlaces_Baguio.STOBOSAMuralArts"
+            android:label="Sample"
+            android:theme="@style/AppTheme.CustomStyle" />
+        <activity
+            android:name=".InfoOfPlaces_Baguio.TheMansion"
+            android:label="Sample"
+            android:theme="@style/AppTheme.CustomStyle" />
+        <activity
+            android:name=".InfoOfPlaces_Baguio.WrightPark"
+            android:label="Sample"
+            android:theme="@style/AppTheme.CustomStyle" />
 
 
 

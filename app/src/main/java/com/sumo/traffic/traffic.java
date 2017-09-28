@@ -90,6 +90,18 @@ import com.sumo.traffic.InfoOfPlaces.InfoOfQmc;
 import com.sumo.traffic.InfoOfPlaces.InfoOfUp;
 import com.sumo.traffic.InfoOfPlaces.InfoOfVargas;
 import com.sumo.traffic.InfoOfPlaces.InfoOfWatershed;
+import com.sumo.traffic.InfoOfPlaces_Baguio.ArcaYard;
+import com.sumo.traffic.InfoOfPlaces_Baguio.CampJohnHay;
+import com.sumo.traffic.InfoOfPlaces_Baguio.DiplomatHotel;
+import com.sumo.traffic.InfoOfPlaces_Baguio.FarmerDaughterRestaurant;
+import com.sumo.traffic.InfoOfPlaces_Baguio.GoodShepherdPlace;
+import com.sumo.traffic.InfoOfPlaces_Baguio.GoodTasteRestaurant;
+import com.sumo.traffic.InfoOfPlaces_Baguio.MinesViewPark;
+import com.sumo.traffic.InfoOfPlaces_Baguio.NightMarket;
+import com.sumo.traffic.InfoOfPlaces_Baguio.PinkSisterConvent;
+import com.sumo.traffic.InfoOfPlaces_Baguio.STOBOSAMuralArts;
+import com.sumo.traffic.InfoOfPlaces_Baguio.TheMansion;
+import com.sumo.traffic.InfoOfPlaces_Baguio.WrightPark;
 import com.sumo.traffic.InfoOfPlaces_Manila.BahayTsinoy;
 import com.sumo.traffic.InfoOfPlaces_Manila.CCP;
 import com.sumo.traffic.InfoOfPlaces_Manila.CasaManila;
@@ -748,24 +760,23 @@ public class traffic extends FragmentActivity implements LocationListener, OnMap
 
             } else if (packs == 2) {
 
-             casa();
+                casa();
                 bahaytsinoy();
                 chinatown();
                 manilachinesecemetery();
 
 
-
             } else if (packs == 3) {
 
                 quiapochurch();
-               sansebastian();
+                sansebastian();
                 casa();
-             luneta();
+                luneta();
 
 
             } else if (packs == 4) {
 
-           manilazoo();
+                manilazoo();
                 nationalmuseum();
                 culturalcenter();
                 pacopark();
@@ -773,13 +784,105 @@ public class traffic extends FragmentActivity implements LocationListener, OnMap
 
             } else if (packs == 5) {
 
-               starcity();
+                starcity();
                 coconutpalace();
                 manilaoceanpark();
                 museopambata();
 
 
             }
+
+            if (SelectQcBagManila.manila == 1) {
+                if (packs == 1) {
+
+
+                    luneta();
+                    casa();
+                    manilacathedral();
+                    manilaamericancemetery();
+
+                } else if (packs == 2) {
+
+                    casa();
+                    bahaytsinoy();
+                    chinatown();
+                    manilachinesecemetery();
+
+
+                } else if (packs == 3) {
+
+                    quiapochurch();
+                    sansebastian();
+                    casa();
+                    luneta();
+
+
+                } else if (packs == 4) {
+
+                    manilazoo();
+                    nationalmuseum();
+                    culturalcenter();
+                    pacopark();
+                    sanagustin();
+
+                } else if (packs == 5) {
+
+                    starcity();
+                    coconutpalace();
+                    manilaoceanpark();
+                    museopambata();
+
+
+                }
+            }
+
+
+            ////////////////////////////////////////BAGUIO///////////////////
+            if (SelectQcBagManila.bg == 1) {
+                if (packs == 1) {
+
+
+                    burnhampark();
+                    baguiocathedral();
+                    lourdesgrotto();
+                    minesview();
+                    themansion();
+
+                } else if (packs == 2) {
+
+                    botanical();
+                    Wrightpark();
+                    campJohnHay();
+                    philippinesmilitiry();
+                    strawberry();
+
+                } else if (packs == 3) {
+
+                 bencab();
+                    goodshepherd();
+                    baguiocountryclub();
+                    bellhouse();
+                    baguiocathedral();
+
+                } else if (packs == 4) {
+
+                    manilazoo();
+                    nationalmuseum();
+                    culturalcenter();
+                    pacopark();
+                    sanagustin();
+
+                } else if (packs == 5) {
+
+                    starcity();
+                    coconutpalace();
+                    manilaoceanpark();
+                    museopambata();
+
+
+                }
+            }
+
         }
 
 
@@ -1986,6 +2089,20 @@ public class traffic extends FragmentActivity implements LocationListener, OnMap
     int sanagustin = 0;
     int star = 0;
 
+
+    int arcayard = 0;
+    int camp = 0;
+    int diplomathotel = 0;
+    int farmerdaughter = 0;
+    int goodshepherd = 0;
+    int goodtaste = 0;
+    int minesview = 0;
+    int nightmarket = 0;
+    int pinksisterconvent = 0;
+    int stobosa = 0;
+    int themansion = 0;
+    int wrightpark = 0;
+
     public void places(View view) {
       /*  if (button1 == 1) {
             ChoicesOfPlace.open = 1;
@@ -2303,6 +2420,131 @@ public class traffic extends FragmentActivity implements LocationListener, OnMap
             }
         }
 
+
+        //////BAGUIOOOOOOOOO//////////////////////////////////////
+
+
+        if (SelectQcBagManila.bg == 1) {
+            if (ArcaYard.select == 1) {
+
+                if (arcayard == 0) {
+                    arcasyard();
+                    arcayard = 1;
+                } else if (arcayard == 1) {
+
+                }
+            }
+
+            if (CampJohnHay.select == 1) {
+
+                if (casa == 0) {
+                    campJohnHay();
+                    casa = 1;
+                } else if (casa == 1) {
+
+                }
+            }
+
+            if (DiplomatHotel.select == 1) {
+
+                if (ccp == 0) {
+                    diplomathotel();
+                    ccp = 1;
+                } else if (ccp == 1) {
+
+                }
+            }
+
+
+            if (FarmerDaughterRestaurant.select == 1) {
+
+                if (coconut == 0) {
+                    farmerDaughterRestaurant();
+                    coconut = 1;
+                } else if (coconut == 1) {
+
+                }
+            }
+
+            if (GoodShepherdPlace.select == 1) {
+
+                if (filipino == 0) {
+                    goodshepherd();
+                    filipino = 1;
+                } else if (filipino == 1) {
+
+                }
+            }
+
+            if (GoodTasteRestaurant.select == 1) {
+
+                if (luneta == 0) {
+                    goodtasteresturant();
+                    luneta = 1;
+                } else if (luneta == 1) {
+
+                }
+            }
+
+            if (MinesViewPark.select == 1) {
+
+                if (manilacathedral == 0) {
+                    minesview();
+                    manilacathedral = 1;
+                } else if (manilacathedral == 1) {
+
+                }
+            }
+
+            if (NightMarket.select == 1) {
+
+                if (national == 0) {
+                    nightmarket();
+                    national = 1;
+                } else if (national == 1) {
+
+                }
+            }
+
+            if (PinkSisterConvent.select == 1) {
+
+                if (nayongfilipino == 0) {
+                    pinksister();
+                    nayongfilipino = 1;
+                } else if (nayongfilipino == 1) {
+
+                }
+            }
+            if (STOBOSAMuralArts.select == 1) {
+
+                if (pacopark == 0) {
+                    stobosa();
+                    pacopark = 1;
+                } else if (pacopark == 1) {
+
+                }
+            }
+
+            if (TheMansion.select == 1) {
+
+                if (sanagustin == 0) {
+                    themansion();
+                    sanagustin = 1;
+                } else if (sanagustin == 1) {
+
+                }
+            }
+            if (WrightPark.select == 1) {
+
+                if (star == 0) {
+                    Wrightpark();
+                    star = 1;
+                } else if (star == 1) {
+
+                }
+            }
+        }
+
         Toast.makeText(getApplicationContext(), "Place Updated!", Toast.LENGTH_LONG).show();
 
 
@@ -2356,6 +2598,994 @@ public class traffic extends FragmentActivity implements LocationListener, OnMap
         // Log.d("meme",myLatLng.toString());
 
         points.add(myLatLng);
+
+
+    }
+    public void bellhouse() {
+
+
+        Toast.makeText(getApplicationContext(), loadingToasts[mList.size() - 1], Toast.LENGTH_LONG).show();
+
+        double wa = 16.3991;
+        double we = 120.6183;
+        LatLng was = new LatLng(wa, we);
+
+
+        MarkerOptions markerOptions = new MarkerOptions()
+                .position(was)
+                .icon(BitmapDescriptorFactory.fromResource(R.drawable.placesz))
+                .title("Bell House")
+                .snippet("placeId:" + " ChIJR78RMcChkTMRyWGEria6N9c")
+                .anchor(0.5f, 1);
+
+
+        points.add(was);
+
+
+        markers.add(mMap.addMarker(markerOptions));
+
+        //EXTRA CODES
+        mList.add(markerOptions);
+
+        distances.add(new String("0"));
+        durations.add(new String("0"));
+        reminders.add(new String(""));
+        timestoStay.add(new String(""));
+        mins.add(new String(""));
+
+
+        String url = null;
+        try {
+            url = makeURL3();
+        } catch (UnsupportedEncodingException e) {
+            e.printStackTrace();
+        }
+
+
+        connectAsyncTask2 downloadTask2 = new connectAsyncTask2(url, this, true);
+        downloadTask2.execute();
+
+
+    }
+
+    public void baguiocountryclub() {
+
+
+        Toast.makeText(getApplicationContext(), loadingToasts[mList.size() - 1], Toast.LENGTH_LONG).show();
+
+        double wa = 16.4091;
+        double we = 120.6183;
+        LatLng was = new LatLng(wa, we);
+
+
+        MarkerOptions markerOptions = new MarkerOptions()
+                .position(was)
+                .icon(BitmapDescriptorFactory.fromResource(R.drawable.placesz))
+                .title("Baguio Country Club")
+                .snippet("placeId:" + " ChIJR78RMcChkTMRyWGEria6N9c")
+                .anchor(0.5f, 1);
+
+
+        points.add(was);
+
+
+        markers.add(mMap.addMarker(markerOptions));
+
+        //EXTRA CODES
+        mList.add(markerOptions);
+
+        distances.add(new String("0"));
+        durations.add(new String("0"));
+        reminders.add(new String(""));
+        timestoStay.add(new String(""));
+        mins.add(new String(""));
+
+
+        String url = null;
+        try {
+            url = makeURL3();
+        } catch (UnsupportedEncodingException e) {
+            e.printStackTrace();
+        }
+
+
+        connectAsyncTask2 downloadTask2 = new connectAsyncTask2(url, this, true);
+        downloadTask2.execute();
+
+
+    }
+
+    public void bencab() {
+
+
+        Toast.makeText(getApplicationContext(), loadingToasts[mList.size() - 1], Toast.LENGTH_LONG).show();
+
+        double wa = 16.4107;
+        double we = 120.5504;
+        LatLng was = new LatLng(wa, we);
+
+
+        MarkerOptions markerOptions = new MarkerOptions()
+                .position(was)
+                .icon(BitmapDescriptorFactory.fromResource(R.drawable.placesz))
+                .title("BenCab Museum")
+                .snippet("placeId:" + " ChIJR78RMcChkTMRyWGEria6N9c")
+                .anchor(0.5f, 1);
+
+
+        points.add(was);
+
+
+        markers.add(mMap.addMarker(markerOptions));
+
+        //EXTRA CODES
+        mList.add(markerOptions);
+
+        distances.add(new String("0"));
+        durations.add(new String("0"));
+        reminders.add(new String(""));
+        timestoStay.add(new String(""));
+        mins.add(new String(""));
+
+
+        String url = null;
+        try {
+            url = makeURL3();
+        } catch (UnsupportedEncodingException e) {
+            e.printStackTrace();
+        }
+
+
+        connectAsyncTask2 downloadTask2 = new connectAsyncTask2(url, this, true);
+        downloadTask2.execute();
+
+
+    }
+
+    public void strawberry() {
+
+
+        Toast.makeText(getApplicationContext(), loadingToasts[mList.size() - 1], Toast.LENGTH_LONG).show();
+
+        double wa = 16.4580;
+        double we = 120.5878;
+        LatLng was = new LatLng(wa, we);
+
+
+        MarkerOptions markerOptions = new MarkerOptions()
+                .position(was)
+                .icon(BitmapDescriptorFactory.fromResource(R.drawable.placesz))
+                .title("Strawberry Farm")
+                .snippet("placeId:" + "ChIJCyMfBaWjkTMRPuhksgmvOUg")
+                .anchor(0.5f, 1);
+
+
+        points.add(was);
+
+
+        markers.add(mMap.addMarker(markerOptions));
+
+        //EXTRA CODES
+        mList.add(markerOptions);
+
+        distances.add(new String("0"));
+        durations.add(new String("0"));
+        reminders.add(new String(""));
+        timestoStay.add(new String(""));
+        mins.add(new String(""));
+
+
+        String url = null;
+        try {
+            url = makeURL3();
+        } catch (UnsupportedEncodingException e) {
+            e.printStackTrace();
+        }
+
+
+        connectAsyncTask2 downloadTask2 = new connectAsyncTask2(url, this, true);
+        downloadTask2.execute();
+
+
+    }
+
+    public void philippinesmilitiry() {
+
+
+        Toast.makeText(getApplicationContext(), loadingToasts[mList.size() - 1], Toast.LENGTH_LONG).show();
+
+        double wa = 16.3667;
+        double we = 120.6167;
+        LatLng was = new LatLng(wa, we);
+
+
+        MarkerOptions markerOptions = new MarkerOptions()
+                .position(was)
+                .icon(BitmapDescriptorFactory.fromResource(R.drawable.placesz))
+                .title("Philippine Military Academy")
+                .snippet("placeId:" + "ChIJw4bWq8ygkTMR6zpkaSG4BJQ")
+                .anchor(0.5f, 1);
+
+
+        points.add(was);
+
+
+        markers.add(mMap.addMarker(markerOptions));
+
+        //EXTRA CODES
+        mList.add(markerOptions);
+
+        distances.add(new String("0"));
+        durations.add(new String("0"));
+        reminders.add(new String(""));
+        timestoStay.add(new String(""));
+        mins.add(new String(""));
+
+
+        String url = null;
+        try {
+            url = makeURL3();
+        } catch (UnsupportedEncodingException e) {
+            e.printStackTrace();
+        }
+
+
+        connectAsyncTask2 downloadTask2 = new connectAsyncTask2(url, this, true);
+        downloadTask2.execute();
+
+
+    }
+
+    public void botanical() {
+
+
+        Toast.makeText(getApplicationContext(), loadingToasts[mList.size() - 1], Toast.LENGTH_LONG).show();
+
+        double wa = 16.4144;
+        double we = 120.6132;
+        LatLng was = new LatLng(wa, we);
+
+
+        MarkerOptions markerOptions = new MarkerOptions()
+                .position(was)
+                .icon(BitmapDescriptorFactory.fromResource(R.drawable.placesz))
+                .title("Baguio Botanical Garden")
+                .snippet("placeId:" + "ChIJNwIGTVGhkTMR9b_SQ-8bBeY")
+                .anchor(0.5f, 1);
+
+
+        points.add(was);
+
+
+        markers.add(mMap.addMarker(markerOptions));
+
+        //EXTRA CODES
+        mList.add(markerOptions);
+
+        distances.add(new String("0"));
+        durations.add(new String("0"));
+        reminders.add(new String(""));
+        timestoStay.add(new String(""));
+        mins.add(new String(""));
+
+
+        String url = null;
+        try {
+            url = makeURL3();
+        } catch (UnsupportedEncodingException e) {
+            e.printStackTrace();
+        }
+
+
+        connectAsyncTask2 downloadTask2 = new connectAsyncTask2(url, this, true);
+        downloadTask2.execute();
+
+
+    }
+
+    public void lourdesgrotto() {
+
+
+        Toast.makeText(getApplicationContext(), loadingToasts[mList.size() - 1], Toast.LENGTH_LONG).show();
+
+        double wa = 16.4096;
+        double we = 120.5806;
+        LatLng was = new LatLng(wa, we);
+
+
+        MarkerOptions markerOptions = new MarkerOptions()
+                .position(was)
+                .icon(BitmapDescriptorFactory.fromResource(R.drawable.placesz))
+                .title("Our Lady of Lourdes Grotto")
+                .snippet("placeId:" + "ChIJv2t243OhkTMR3pLWeF5IK7k")
+                .anchor(0.5f, 1);
+
+
+        points.add(was);
+
+
+        markers.add(mMap.addMarker(markerOptions));
+
+        //EXTRA CODES
+        mList.add(markerOptions);
+
+        distances.add(new String("0"));
+        durations.add(new String("0"));
+        reminders.add(new String(""));
+        timestoStay.add(new String(""));
+        mins.add(new String(""));
+
+
+        String url = null;
+        try {
+            url = makeURL3();
+        } catch (UnsupportedEncodingException e) {
+            e.printStackTrace();
+        }
+
+
+        connectAsyncTask2 downloadTask2 = new connectAsyncTask2(url, this, true);
+        downloadTask2.execute();
+
+
+    }
+
+
+    public void baguiocathedral() {
+
+
+        Toast.makeText(getApplicationContext(), loadingToasts[mList.size() - 1], Toast.LENGTH_LONG).show();
+
+        double wa = 16.4126;
+        double we = 120.5986;
+        LatLng was = new LatLng(wa, we);
+
+
+        MarkerOptions markerOptions = new MarkerOptions()
+                .position(was)
+                .icon(BitmapDescriptorFactory.fromResource(R.drawable.placesz))
+                .title("Baguio Cathedral")
+                .snippet("placeId:" + "ChIJwblPOF2hkTMROOQiH9qxCwg")
+                .anchor(0.5f, 1);
+
+
+        points.add(was);
+
+
+        markers.add(mMap.addMarker(markerOptions));
+
+        //EXTRA CODES
+        mList.add(markerOptions);
+
+        distances.add(new String("0"));
+        durations.add(new String("0"));
+        reminders.add(new String(""));
+        timestoStay.add(new String(""));
+        mins.add(new String(""));
+
+
+        String url = null;
+        try {
+            url = makeURL3();
+        } catch (UnsupportedEncodingException e) {
+            e.printStackTrace();
+        }
+
+
+        connectAsyncTask2 downloadTask2 = new connectAsyncTask2(url, this, true);
+        downloadTask2.execute();
+
+
+    }
+
+    public void burnhampark() {
+
+
+        Toast.makeText(getApplicationContext(), loadingToasts[mList.size() - 1], Toast.LENGTH_LONG).show();
+
+        double wa = 16.4093;
+        double we = 120.5950;
+        LatLng was = new LatLng(wa, we);
+
+
+        MarkerOptions markerOptions = new MarkerOptions()
+                .position(was)
+                .icon(BitmapDescriptorFactory.fromResource(R.drawable.placesz))
+                .title("Burnham Park")
+                .snippet("placeId:" + "ChIJiYLvmGmhkTMR8rwh5qkzitE")
+                .anchor(0.5f, 1);
+
+
+        points.add(was);
+
+
+        markers.add(mMap.addMarker(markerOptions));
+
+        //EXTRA CODES
+        mList.add(markerOptions);
+
+        distances.add(new String("0"));
+        durations.add(new String("0"));
+        reminders.add(new String(""));
+        timestoStay.add(new String(""));
+        mins.add(new String(""));
+
+
+        String url = null;
+        try {
+            url = makeURL3();
+        } catch (UnsupportedEncodingException e) {
+            e.printStackTrace();
+        }
+
+
+        connectAsyncTask2 downloadTask2 = new connectAsyncTask2(url, this, true);
+        downloadTask2.execute();
+
+
+    }
+
+    public void Wrightpark() {
+
+
+        Toast.makeText(getApplicationContext(), loadingToasts[mList.size() - 1], Toast.LENGTH_LONG).show();
+
+        double wa = 16.4159;
+        double we = 120.6167;
+        LatLng was = new LatLng(wa, we);
+
+
+        MarkerOptions markerOptions = new MarkerOptions()
+                .position(was)
+                .icon(BitmapDescriptorFactory.fromResource(R.drawable.placesz))
+                .title("Wright Park")
+                .snippet("placeId:" + "ChIJHVAPuaqmkTMRsGjxiLAaDNY")
+                .anchor(0.5f, 1);
+
+
+        points.add(was);
+
+
+        markers.add(mMap.addMarker(markerOptions));
+
+        //EXTRA CODES
+        mList.add(markerOptions);
+
+        distances.add(new String("0"));
+        durations.add(new String("0"));
+        reminders.add(new String(""));
+        timestoStay.add(new String(""));
+        mins.add(new String(""));
+
+
+        String url = null;
+        try {
+            url = makeURL3();
+        } catch (UnsupportedEncodingException e) {
+            e.printStackTrace();
+        }
+
+
+        connectAsyncTask2 downloadTask2 = new connectAsyncTask2(url, this, true);
+        downloadTask2.execute();
+
+
+    }
+
+    public void themansion() {
+
+
+        Toast.makeText(getApplicationContext(), loadingToasts[mList.size() - 1], Toast.LENGTH_LONG).show();
+
+        double wa = 16.4124;
+        double we = 120.6215;
+        LatLng was = new LatLng(wa, we);
+
+
+        MarkerOptions markerOptions = new MarkerOptions()
+                .position(was)
+                .icon(BitmapDescriptorFactory.fromResource(R.drawable.placesz))
+                .title("The Mansion")
+                .snippet("placeId:" + "ChIJobXs6qymkTMRluHL5rcRpeM")
+                .anchor(0.5f, 1);
+
+
+        points.add(was);
+
+
+        markers.add(mMap.addMarker(markerOptions));
+
+        //EXTRA CODES
+        mList.add(markerOptions);
+
+        distances.add(new String("0"));
+        durations.add(new String("0"));
+        reminders.add(new String(""));
+        timestoStay.add(new String(""));
+        mins.add(new String(""));
+
+
+        String url = null;
+        try {
+            url = makeURL3();
+        } catch (UnsupportedEncodingException e) {
+            e.printStackTrace();
+        }
+
+
+        connectAsyncTask2 downloadTask2 = new connectAsyncTask2(url, this, true);
+        downloadTask2.execute();
+
+
+    }
+
+    public void stobosa() {
+
+
+        Toast.makeText(getApplicationContext(), loadingToasts[mList.size() - 1], Toast.LENGTH_LONG).show();
+
+        double wa = 16.4337;
+        double we = 120.5970;
+        LatLng was = new LatLng(wa, we);
+
+
+        MarkerOptions markerOptions = new MarkerOptions()
+                .position(was)
+                .icon(BitmapDescriptorFactory.fromResource(R.drawable.placesz))
+                .title("Pink Sister Convent")
+                .snippet("placeId:" + "ChIJV2B0qsKjkTMRx6eIcmyghwE")
+                .anchor(0.5f, 1);
+
+
+        points.add(was);
+
+
+        markers.add(mMap.addMarker(markerOptions));
+
+        //EXTRA CODES
+        mList.add(markerOptions);
+
+        distances.add(new String("0"));
+        durations.add(new String("0"));
+        reminders.add(new String(""));
+        timestoStay.add(new String(""));
+        mins.add(new String(""));
+
+
+        String url = null;
+        try {
+            url = makeURL3();
+        } catch (UnsupportedEncodingException e) {
+            e.printStackTrace();
+        }
+
+
+        connectAsyncTask2 downloadTask2 = new connectAsyncTask2(url, this, true);
+        downloadTask2.execute();
+
+
+    }
+
+    public void pinksister() {
+
+
+        Toast.makeText(getApplicationContext(), loadingToasts[mList.size() - 1], Toast.LENGTH_LONG).show();
+
+        double wa = 16.4121;
+        double we = 120.6042;
+        LatLng was = new LatLng(wa, we);
+
+
+        MarkerOptions markerOptions = new MarkerOptions()
+                .position(was)
+                .icon(BitmapDescriptorFactory.fromResource(R.drawable.placesz))
+                .title("Pink Sister Convent")
+                .snippet("placeId:" + "ChIJUUPLblyhkTMRGPlqS4Qg5Fk")
+                .anchor(0.5f, 1);
+
+
+        points.add(was);
+
+
+        markers.add(mMap.addMarker(markerOptions));
+
+        //EXTRA CODES
+        mList.add(markerOptions);
+
+        distances.add(new String("0"));
+        durations.add(new String("0"));
+        reminders.add(new String(""));
+        timestoStay.add(new String(""));
+        mins.add(new String(""));
+
+
+        String url = null;
+        try {
+            url = makeURL3();
+        } catch (UnsupportedEncodingException e) {
+            e.printStackTrace();
+        }
+
+
+        connectAsyncTask2 downloadTask2 = new connectAsyncTask2(url, this, true);
+        downloadTask2.execute();
+
+
+    }
+
+    public void nightmarket() {
+
+
+        Toast.makeText(getApplicationContext(), loadingToasts[mList.size() - 1], Toast.LENGTH_LONG).show();
+
+        double wa = 16.4130;
+        double we = 120.5952;
+        LatLng was = new LatLng(wa, we);
+
+
+        MarkerOptions markerOptions = new MarkerOptions()
+                .position(was)
+                .icon(BitmapDescriptorFactory.fromResource(R.drawable.placesz))
+                .title("Baguio Night Market")
+                .snippet("placeId:" + "ChIJvbe53mehkTMR8T_ioyknfYk")
+                .anchor(0.5f, 1);
+
+
+        points.add(was);
+
+
+        markers.add(mMap.addMarker(markerOptions));
+
+        //EXTRA CODES
+        mList.add(markerOptions);
+
+        distances.add(new String("0"));
+        durations.add(new String("0"));
+        reminders.add(new String(""));
+        timestoStay.add(new String(""));
+        mins.add(new String(""));
+
+
+        String url = null;
+        try {
+            url = makeURL3();
+        } catch (UnsupportedEncodingException e) {
+            e.printStackTrace();
+        }
+
+
+        connectAsyncTask2 downloadTask2 = new connectAsyncTask2(url, this, true);
+        downloadTask2.execute();
+
+
+    }
+
+    public void minesview() {
+
+
+        Toast.makeText(getApplicationContext(), loadingToasts[mList.size() - 1], Toast.LENGTH_LONG).show();
+
+        double wa = 16.4196;
+        double we = 120.6279;
+        LatLng was = new LatLng(wa, we);
+
+
+        MarkerOptions markerOptions = new MarkerOptions()
+                .position(was)
+                .icon(BitmapDescriptorFactory.fromResource(R.drawable.placesz))
+                .title("Mines View Park")
+                .snippet("placeId:" + "ChIJVSABPwKkkTMRyyCzUZaCQPE")
+                .anchor(0.5f, 1);
+
+
+        points.add(was);
+
+
+        markers.add(mMap.addMarker(markerOptions));
+
+        //EXTRA CODES
+        mList.add(markerOptions);
+
+        distances.add(new String("0"));
+        durations.add(new String("0"));
+        reminders.add(new String(""));
+        timestoStay.add(new String(""));
+        mins.add(new String(""));
+
+
+        String url = null;
+        try {
+            url = makeURL3();
+        } catch (UnsupportedEncodingException e) {
+            e.printStackTrace();
+        }
+
+
+        connectAsyncTask2 downloadTask2 = new connectAsyncTask2(url, this, true);
+        downloadTask2.execute();
+
+
+    }
+
+    public void goodtasteresturant() {
+
+
+        Toast.makeText(getApplicationContext(), loadingToasts[mList.size() - 1], Toast.LENGTH_LONG).show();
+
+        double wa = 16.4165;
+        double we = 120.5967;
+        LatLng was = new LatLng(wa, we);
+
+
+        MarkerOptions markerOptions = new MarkerOptions()
+                .position(was)
+                .icon(BitmapDescriptorFactory.fromResource(R.drawable.placesz))
+                .title("Good Taste Cafe & Restaurant")
+                .snippet("placeId:" + "ChIJgVMUd2ehkTMR2W_7tSNQbw0")
+                .anchor(0.5f, 1);
+
+
+        points.add(was);
+
+
+        markers.add(mMap.addMarker(markerOptions));
+
+        //EXTRA CODES
+        mList.add(markerOptions);
+
+        distances.add(new String("0"));
+        durations.add(new String("0"));
+        reminders.add(new String(""));
+        timestoStay.add(new String(""));
+        mins.add(new String(""));
+
+
+        String url = null;
+        try {
+            url = makeURL3();
+        } catch (UnsupportedEncodingException e) {
+            e.printStackTrace();
+        }
+
+
+        connectAsyncTask2 downloadTask2 = new connectAsyncTask2(url, this, true);
+        downloadTask2.execute();
+
+
+    }
+
+    public void goodshepherd() {
+
+
+        Toast.makeText(getApplicationContext(), loadingToasts[mList.size() - 1], Toast.LENGTH_LONG).show();
+
+        double wa = 16.4219;
+        double we = 120.6257;
+        LatLng was = new LatLng(wa, we);
+
+
+        MarkerOptions markerOptions = new MarkerOptions()
+                .position(was)
+                .icon(BitmapDescriptorFactory.fromResource(R.drawable.placesz))
+                .title("Good Shepherd")
+                .snippet("placeId:" + "ChIJd8MMYQGkkTMRRot_a8URm-M")
+                .anchor(0.5f, 1);
+
+
+        points.add(was);
+
+
+        markers.add(mMap.addMarker(markerOptions));
+
+        //EXTRA CODES
+        mList.add(markerOptions);
+
+        distances.add(new String("0"));
+        durations.add(new String("0"));
+        reminders.add(new String(""));
+        timestoStay.add(new String(""));
+        mins.add(new String(""));
+
+
+        String url = null;
+        try {
+            url = makeURL3();
+        } catch (UnsupportedEncodingException e) {
+            e.printStackTrace();
+        }
+
+
+        connectAsyncTask2 downloadTask2 = new connectAsyncTask2(url, this, true);
+        downloadTask2.execute();
+
+
+    }
+
+    public void farmerDaughterRestaurant() {
+
+
+        Toast.makeText(getApplicationContext(), loadingToasts[mList.size() - 1], Toast.LENGTH_LONG).show();
+
+        double wa = 16.4301;
+        double we = 120.5763;
+        LatLng was = new LatLng(wa, we);
+
+
+        MarkerOptions markerOptions = new MarkerOptions()
+                .position(was)
+                .icon(BitmapDescriptorFactory.fromResource(R.drawable.placesz))
+                .title("The Farmer's Daughter Restaurant ")
+                .snippet("placeId:" + "ChIJiyD98tSjkTMRDKfAOTwT7cw")
+                .anchor(0.5f, 1);
+
+
+        points.add(was);
+
+
+        markers.add(mMap.addMarker(markerOptions));
+
+        //EXTRA CODES
+        mList.add(markerOptions);
+
+        distances.add(new String("0"));
+        durations.add(new String("0"));
+        reminders.add(new String(""));
+        timestoStay.add(new String(""));
+        mins.add(new String(""));
+
+
+        String url = null;
+        try {
+            url = makeURL3();
+        } catch (UnsupportedEncodingException e) {
+            e.printStackTrace();
+        }
+
+
+        connectAsyncTask2 downloadTask2 = new connectAsyncTask2(url, this, true);
+        downloadTask2.execute();
+
+
+    }
+
+    public void diplomathotel() {
+
+
+        Toast.makeText(getApplicationContext(), loadingToasts[mList.size() - 1], Toast.LENGTH_LONG).show();
+
+        double wa = 16.4039;
+        double we = 120.5866;
+        LatLng was = new LatLng(wa, we);
+
+
+        MarkerOptions markerOptions = new MarkerOptions()
+                .position(was)
+                .icon(BitmapDescriptorFactory.fromResource(R.drawable.placesz))
+                .title("Diplomat Hotel")
+                .snippet("placeId:" + "ChIJVVVlNm2hkTMRwulxzPqC7MI")
+                .anchor(0.5f, 1);
+
+
+        points.add(was);
+
+
+        markers.add(mMap.addMarker(markerOptions));
+
+        //EXTRA CODES
+        mList.add(markerOptions);
+
+        distances.add(new String("0"));
+        durations.add(new String("0"));
+        reminders.add(new String(""));
+        timestoStay.add(new String(""));
+        mins.add(new String(""));
+
+
+        String url = null;
+        try {
+            url = makeURL3();
+        } catch (UnsupportedEncodingException e) {
+            e.printStackTrace();
+        }
+
+
+        connectAsyncTask2 downloadTask2 = new connectAsyncTask2(url, this, true);
+        downloadTask2.execute();
+
+
+    }
+
+    public void campJohnHay() {
+
+
+        Toast.makeText(getApplicationContext(), loadingToasts[mList.size() - 1], Toast.LENGTH_LONG).show();
+
+        double wa = 16.3970;
+        double we = 120.6114;
+        LatLng was = new LatLng(wa, we);
+
+
+        MarkerOptions markerOptions = new MarkerOptions()
+                .position(was)
+                .icon(BitmapDescriptorFactory.fromResource(R.drawable.placesz))
+                .title("Camp John Hay")
+                .snippet("placeId:" + "ChIJk8D3_kmhkTMRzHPWQIAxk68")
+                .anchor(0.5f, 1);
+
+
+        points.add(was);
+
+
+        markers.add(mMap.addMarker(markerOptions));
+
+        //EXTRA CODES
+        mList.add(markerOptions);
+
+        distances.add(new String("0"));
+        durations.add(new String("0"));
+        reminders.add(new String(""));
+        timestoStay.add(new String(""));
+        mins.add(new String(""));
+
+
+        String url = null;
+        try {
+            url = makeURL3();
+        } catch (UnsupportedEncodingException e) {
+            e.printStackTrace();
+        }
+
+
+        connectAsyncTask2 downloadTask2 = new connectAsyncTask2(url, this, true);
+        downloadTask2.execute();
+
+
+    }
+
+
+    public void arcasyard() {
+
+
+        Toast.makeText(getApplicationContext(), loadingToasts[mList.size() - 1], Toast.LENGTH_LONG).show();
+
+        double wa = 16.4289;
+        double we = 120.6231;
+        LatLng was = new LatLng(wa, we);
+
+
+        MarkerOptions markerOptions = new MarkerOptions()
+                .position(was)
+                .icon(BitmapDescriptorFactory.fromResource(R.drawable.placesz))
+                .title("Arca's Yard")
+                .snippet("placeId:" + "ChIJu9TKLgakkTMRLXbs9P7ImJA")
+                .anchor(0.5f, 1);
+
+
+        points.add(was);
+
+
+        markers.add(mMap.addMarker(markerOptions));
+
+        //EXTRA CODES
+        mList.add(markerOptions);
+
+        distances.add(new String("0"));
+        durations.add(new String("0"));
+        reminders.add(new String(""));
+        timestoStay.add(new String(""));
+        mins.add(new String(""));
+
+
+        String url = null;
+        try {
+            url = makeURL3();
+        } catch (UnsupportedEncodingException e) {
+            e.printStackTrace();
+        }
+
+
+        connectAsyncTask2 downloadTask2 = new connectAsyncTask2(url, this, true);
+        downloadTask2.execute();
 
 
     }
@@ -2983,6 +4213,7 @@ public class traffic extends FragmentActivity implements LocationListener, OnMap
 
 
     }
+
     public void moa() {
 
 

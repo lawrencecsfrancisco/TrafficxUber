@@ -25,6 +25,18 @@ import com.sumo.traffic.InfoOfPlaces.InfoOfQmc;
 import com.sumo.traffic.InfoOfPlaces.InfoOfUp;
 import com.sumo.traffic.InfoOfPlaces.InfoOfVargas;
 import com.sumo.traffic.InfoOfPlaces.InfoOfWatershed;
+import com.sumo.traffic.InfoOfPlaces_Baguio.ArcaYard;
+import com.sumo.traffic.InfoOfPlaces_Baguio.CampJohnHay;
+import com.sumo.traffic.InfoOfPlaces_Baguio.DiplomatHotel;
+import com.sumo.traffic.InfoOfPlaces_Baguio.FarmerDaughterRestaurant;
+import com.sumo.traffic.InfoOfPlaces_Baguio.GoodShepherdPlace;
+import com.sumo.traffic.InfoOfPlaces_Baguio.GoodTasteRestaurant;
+import com.sumo.traffic.InfoOfPlaces_Baguio.MinesViewPark;
+import com.sumo.traffic.InfoOfPlaces_Baguio.NightMarket;
+import com.sumo.traffic.InfoOfPlaces_Baguio.PinkSisterConvent;
+import com.sumo.traffic.InfoOfPlaces_Baguio.STOBOSAMuralArts;
+import com.sumo.traffic.InfoOfPlaces_Baguio.TheMansion;
+import com.sumo.traffic.InfoOfPlaces_Baguio.WrightPark;
 import com.sumo.traffic.InfoOfPlaces_Manila.BahayTsinoy;
 import com.sumo.traffic.InfoOfPlaces_Manila.CCP;
 import com.sumo.traffic.InfoOfPlaces_Manila.CasaManila;
@@ -47,18 +59,18 @@ public class ReviewChoiceOfPlace_Baguio extends AppCompatActivity {
     static RecyclerView.Adapter adapterStaff;
     static List<placeitem> InitialListStaffs;
 
-    int tsinoy = 0;
-    int casa = 0;
-    int ccp = 0;
-    int coconut = 0;
-    int filipino = 0;
-    int luneta = 0;
-    int manilacathedral = 0;
-    int national = 0;
-    int nayongfilipino = 0;
-    int pacopark = 0;
-    int sanagustin = 0;
-    int star = 0;
+    int arcayard = 0;
+    int campjohnhay = 0;
+    int diplomathotel = 0;
+    int farmerdaughter = 0;
+    int goodshepherplace = 0;
+    int goodtaste = 0;
+    int minesviewpark = 0;
+    int nightmarket = 0;
+    int pinksister = 0;
+    int stobosa = 0;
+    int themansion = 0;
+    int wrightpark = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -90,188 +102,188 @@ public class ReviewChoiceOfPlace_Baguio extends AppCompatActivity {
         placeitem infovargas = new placeitem();
         placeitem infowatershed = new placeitem();
 
-        if (BahayTsinoy.select == 1) {
-            if (tsinoy == 0) {
+        if (ArcaYard.select == 1) {
+            if (arcayard == 0) {
 
-                infoup.setname("Bahay Tsinoy");
-                infoup.settype("Museum");
+                infoup.setname("Arca's Yard");
+                infoup.settype("Cafe");
                 InitialListStaffs.add(infoup);
-                tsinoy= 1;
-            } else if (tsinoy== 1) {
+                arcayard= 1;
+            } else if (arcayard== 1) {
 
             }
-        } else if (BahayTsinoy.select == 0) {
+        } else if (ArcaYard.select == 0) {
             InitialListStaffs.remove(infoup);
 
         }
 
 
-        if (CasaManila.select == 1) {
-            if (casa == 0) {
+        if (CampJohnHay.select == 1) {
+            if (campjohnhay == 0) {
 
-                infoart.setname("Casa Manila");
-                infoart.settype("Museum");
+                infoart.setname("Camp John Hay");
+                infoart.settype("Hotels");
                 InitialListStaffs.add(infoart);
-                casa = 1;
+                campjohnhay = 1;
 
-            } else if (casa == 1) {
+            } else if (campjohnhay == 1) {
 
             }
-        } else if (CasaManila.select == 0) {
+        } else if (CampJohnHay.select == 0) {
             InitialListStaffs.remove(infoart);
 
         }
 
 
-        if (CCP.select == 1) {
-            if (ccp == 0) {
+        if (DiplomatHotel.select == 1) {
+            if (diplomathotel == 0) {
 
-                infoparish.setname("Cultural Center of the Philippines");
-                infoparish.settype("Culture Center");
+                infoparish.setname("Diplomat Hotel");
+                infoparish.settype("Historical place");
                 InitialListStaffs.add(infoparish);
-                ccp = 1;
+                diplomathotel = 1;
 
-            } else if (ccp == 1) {
+            } else if (diplomathotel == 1) {
 
             }
-        } else if (CCP.select == 0) {
+        } else if (DiplomatHotel.select == 0) {
             InitialListStaffs.remove(infoparish);
 
         }
 
 
-        if (coconutpalace.select == 1) {
+        if (FarmerDaughterRestaurant.select == 1) {
 
-            if (coconut == 0) {
+            if (farmerdaughter == 0) {
 
-                infoateneo.setname("Coconut Palace");
-                infoateneo.settype("Museum");
+                infoateneo.setname("Farmer's Daughter Restaurant");
+                infoateneo.settype("Restaurant");
                 InitialListStaffs.add(infoateneo);
-                coconut = 1;
-            } else if (coconut == 1) {
+                farmerdaughter = 1;
+            } else if (farmerdaughter == 1) {
 
             }
 
-        } else if (coconutpalace.select == 0) {
+        } else if (FarmerDaughterRestaurant.select == 0) {
             InitialListStaffs.remove(infoateneo);
 
         }
 
-        if (FilipinoChinese.select == 1) {
-            if (filipino == 0) {
+        if (GoodShepherdPlace.select == 1) {
+            if (goodshepherplace == 0) {
 
-                infobayani.setname("Filipino - Chinese Friendship Arch");
-                infobayani.settype("Monument");
+                infobayani.setname("Good Shepherd");
+                infobayani.settype("Asian Grocery Store");
                 InitialListStaffs.add(infobayani);
-                filipino = 1;
-            } else if (filipino == 1) {
+                goodshepherplace = 1;
+            } else if (goodshepherplace == 1) {
 
             }
 
-        } else if (FilipinoChinese.select == 0) {
+        } else if (GoodShepherdPlace.select == 0) {
             InitialListStaffs.remove(infobayani);
 
         }
 
-        if (Luneta.select == 1) {
+        if (GoodTasteRestaurant.select == 1) {
 
-            if (luneta == 0) {
+            if (goodtaste== 0) {
 
-                infocof.setname("Luneta Park");
-                infocof.settype("Monument");
+                infocof.setname("Good Taste Restaurant");
+                infocof.settype("Restaurant");
                 InitialListStaffs.add(infocof);
-                luneta = 1;
-            } else if (luneta == 1) {
+                goodtaste = 1;
+            } else if (goodtaste == 1) {
 
             }
-        } else if (Luneta.select == 0) {
+        } else if (GoodTasteRestaurant.select == 0) {
             InitialListStaffs.remove(infocof);
 
         }
 
-        if (ManilaCathedral.select == 1) {
+        if (MinesViewPark.select == 1) {
 
-            if (manilacathedral == 0) {
+            if (minesviewpark == 0) {
 
 
-                infodam.setname("Manila Cathedral");
-                infodam.settype("Church");
+                infodam.setname("Mines View Park");
+                infodam.settype("Overlook Park");
                 InitialListStaffs.add(infodam);
-                manilacathedral = 1;
-            } else if (manilacathedral == 1) {
+                minesviewpark = 1;
+            } else if (minesviewpark == 1) {
 
             }
-        } else if (ManilaCathedral.select == 0) {
+        } else if (MinesViewPark.select == 0) {
             InitialListStaffs.remove(infodam);
 
         }
 
 
-        if (NationalMuseum.select == 1) {
+        if (NightMarket.select == 1) {
 
-            if (national == 0) {
+            if (nightmarket ==0) {
 
-                infoeast.setname("National Museum");
-                infoeast.settype("Museum");
+                infoeast.setname("Baguio Night Market");
+                infoeast.settype("Market");
                 InitialListStaffs.add(infoeast);
-                national = 1;
-            } else if (national == 1) {
+                nightmarket = 1;
+            } else if (nightmarket == 1) {
 
             }
-        } else if (NationalMuseum.select == 0) {
+        } else if (NightMarket.select == 0) {
             InitialListStaffs.remove(infoeast);
 
         }
 
 
-        if (NayongFilipino.select == 1) {
+        if (PinkSisterConvent.select == 1) {
 
-            if (nayongfilipino == 0) {
+            if (pinksister == 0) {
 
-                infoedsa.setname("Nayong Filipino");
-                infoedsa.settype("Museum");
+                infoedsa.setname("Pink Sisters Convent");
+                infoedsa.settype("Convent");
                 InitialListStaffs.add(infoedsa);
-                nayongfilipino = 1;
-            } else if (nayongfilipino == 1) {
+                pinksister = 1;
+            } else if (pinksister == 1) {
 
             }
 
-        } else if (NayongFilipino.select == 0) {
+        } else if (PinkSisterConvent.select == 0) {
             InitialListStaffs.remove(infoedsa);
 
         }
 
 
-        if (PacoPark.select == 1) {
+        if (STOBOSAMuralArts.select == 1) {
 
 
-            if (pacopark == 0) {
+            if (stobosa== 0) {
 
-                infomaginhawa.setname("Paco Park");
-                infomaginhawa.settype("Cemetery");
+                infomaginhawa.setname("Stobosa Mural Art Work");
+                infomaginhawa.settype("Colored House");
                 InitialListStaffs.add(infomaginhawa);
-                pacopark = 1;
-            } else if (pacopark == 1) {
+                stobosa = 1;
+            } else if (stobosa == 1) {
 
             }
-        } else if (PacoPark.select == 0) {
+        } else if (STOBOSAMuralArts.select == 0) {
             InitialListStaffs.remove(infomaginhawa);
 
         }
 
 
-        if (SanAgustinChurch.select == 1) {
+        if (TheMansion.select == 1) {
 
 
-            if (sanagustin == 0) {
+            if (themansion == 0) {
 
-                infoninoy.setname("San Agustin Church");
-                infoninoy.settype("Church");
+                infoninoy.setname("The Mansion");
+                infoninoy.settype("Monument");
                 InitialListStaffs.add(infoninoy);
-                sanagustin = 1;
-            } else if (sanagustin == 1) {
+                themansion = 1;
+            } else if (themansion == 1) {
 
-            } else if (SanAgustinChurch.select == 0) {
+            } else if (TheMansion.select == 0) {
                 InitialListStaffs.remove(infoninoy);
 
             }
@@ -279,16 +291,16 @@ public class ReviewChoiceOfPlace_Baguio extends AppCompatActivity {
 
         }
 
-        if (starcity.select == 1) {
+        if (WrightPark.select == 1) {
 
 
-            if (star == 0) {
+            if (wrightpark == 0) {
 
-                infopeople.setname("People Power Monument");
-                infopeople.settype("Monument");
+                infopeople.setname("Wright Park");
+                infopeople.settype("Park");
                 InitialListStaffs.add(infopeople);
-                star = 1;
-            } else if (star == 1) {
+                wrightpark = 1;
+            } else if (wrightpark == 1) {
 
             }
 
