@@ -98,10 +98,10 @@ public class TemplateOrChoices_baguio extends AppCompatActivity implements View.
     public void addTilesToContainer() {
         View tileView;
         int[] images = {
-                R.drawable.package_baguio ,
+                R.drawable.package_baguio,
                 R.drawable.img_destmo,
                 R.drawable.img_itinerary,
-             //   R.drawable.img_freemode,
+                //   R.drawable.img_freemode,
                 //   R.drawable.image_five
         };
 
@@ -190,12 +190,11 @@ public class TemplateOrChoices_baguio extends AppCompatActivity implements View.
                             downToUpScroll(HelperView.getCurrentView(), HelperView.getFollowingView());
                             bottomline.setVisibility(View.VISIBLE);
                         } else {
-                           /* Intent intent = new Intent(this, ChoicesOfPlace.class);
+                            Intent intent = new Intent(this, ChoicesOfBaguio.class);
                             startActivity(intent);
-                            packages = 0; */
+                            packages = 0;
 
                         }
-
                         break;
 
                     case 3:
@@ -238,9 +237,9 @@ public class TemplateOrChoices_baguio extends AppCompatActivity implements View.
                     downToUpScroll(HelperView.getCurrentView(), HelperView.getFollowingView());
                     bottomline.setVisibility(View.VISIBLE);
                 } else {
-                   /* Intent intent = new Intent(this, ChoicesOfPlace.class);
+                    Intent intent = new Intent(this, ChoicesOfBaguio.class);
                     startActivity(intent);
-                    packages = 0; */
+                    packages = 0;
 
                 }
                 break;

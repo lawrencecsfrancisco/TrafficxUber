@@ -9,6 +9,7 @@ import android.os.Bundle;
 import android.support.v4.view.GestureDetectorCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.util.Log;
 import android.view.GestureDetector;
 import android.view.LayoutInflater;
 import android.view.MotionEvent;
@@ -199,6 +200,9 @@ public class SelectQcBagManila extends AppCompatActivity implements View.OnClick
                             Intent intent = new Intent(this, TemplateOrChoices_manila.class);
                             startActivity(intent);
                             manila = 1;
+                            Log.d("statuss","qc" + qc);
+                            Log.d("statuss","manila" + manila);
+                            Log.d("statuss","baguio" + bg);
 
 
                         }
@@ -241,7 +245,7 @@ public class SelectQcBagManila extends AppCompatActivity implements View.OnClick
                     Intent intent = new Intent(this, TemplateOrChoices.class); //ChoicesOfPackage
                     startActivity(intent);
                     finish();
-                    packages = 1;
+                   qc = 1;
                 }
                 break;
 
@@ -253,7 +257,10 @@ public class SelectQcBagManila extends AppCompatActivity implements View.OnClick
                 } else {
                     Intent intent = new Intent(this, TemplateOrChoices_manila.class);
                     startActivity(intent);
-                    packages = 0;
+                    manila = 1;
+                    Log.d("statuss","qc" + qc);
+                    Log.d("statuss","manila" + manila);
+                    Log.d("statuss","baguio" + bg);
 
                 }
                 break;
@@ -265,7 +272,7 @@ public class SelectQcBagManila extends AppCompatActivity implements View.OnClick
                 } else {
                     Intent intent = new Intent(this, TemplateOrChoices_baguio.class);
                     startActivity(intent);
-                    packages = 3;
+                    bg = 1;
 
                 }
                 break;

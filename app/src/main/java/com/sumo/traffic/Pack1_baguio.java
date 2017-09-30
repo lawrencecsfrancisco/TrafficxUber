@@ -59,7 +59,7 @@ public class Pack1_baguio extends Activity {
 
         progressDialog.setMessage("Fetching Data, Please Wait...");
         progressDialog.show();
-        placeid = "ChIJ5UTioJW3lzMRCVEsXIinoQY";
+        placeid = "ChIJiYLvmGmhkTMR8rwh5qkzitE";
         FetchReviews fetchReviews = new FetchReviews();
         fetchReviews.execute();
 

@@ -382,6 +382,16 @@ public class traffic extends FragmentActivity implements LocationListener, OnMap
                 } else if (TemplateOrChoices.packages == 1) {
                     packganern();
                 }
+                if (TemplateOrChoices_baguio.packages == 0) {
+                    selected();
+                } else if (TemplateOrChoices_baguio.packages == 1) {
+                    packganern();
+                }
+                if (TemplateOrChoices_manila.packages == 0) {
+                    selected();
+                } else if (TemplateOrChoices_manila.packages == 1) {
+                    packganern();
+                }
             }
         };
 
@@ -701,52 +711,55 @@ public class traffic extends FragmentActivity implements LocationListener, OnMap
     }
 
     public void packganern() {
-        if (packs == 1) {
+
+        if (SelectQcBagManila.qc == 1) {
+            if (packs == 1) {
 
 
-            ArtInIsland();
-            qcx();
-            circleoffun();
-            domingo();
-            amoranto();
+                ArtInIsland();
+                qcx();
+                circleoffun();
+                domingo();
+                amoranto();
 
 
-        } else if (packs == 2) {
+            } else if (packs == 2) {
 
-            ateneogallery();
-            santamaria();
-            uptc();
-            balara();
-            heritage();
-
-
-        } else if (packs == 3) {
-
-            edsa();
-            eastwood();
-            churchgesu();
-            maginhawa();
-            up();
+                ateneogallery();
+                santamaria();
+                uptc();
+                balara();
+                heritage();
 
 
-        } else if (packs == 4) {
+            } else if (packs == 3) {
 
-            cubaoexpo();
-            rita();
-            bantayog();
-            pagasa();
-            wildlife();
-
-
-        } else if (packs == 5) {
-
-            kamalig();
-            armedforces();
-            mystery();
-            monasterio();
-            fernwood();
+                edsa();
+                eastwood();
+                churchgesu();
+                maginhawa();
+                up();
 
 
+            } else if (packs == 4) {
+
+                cubaoexpo();
+                rita();
+                bantayog();
+                pagasa();
+                wildlife();
+
+
+            } else if (packs == 5) {
+
+                kamalig();
+                armedforces();
+                mystery();
+                monasterio();
+                fernwood();
+
+
+            }
         }
 
         if (SelectQcBagManila.manila == 1) {
@@ -791,56 +804,14 @@ public class traffic extends FragmentActivity implements LocationListener, OnMap
 
 
             }
-
-            if (SelectQcBagManila.manila == 1) {
-                if (packs == 1) {
+        }
 
 
-                    luneta();
-                    casa();
-                    manilacathedral();
-                    manilaamericancemetery();
-
-                } else if (packs == 2) {
-
-                    casa();
-                    bahaytsinoy();
-                    chinatown();
-                    manilachinesecemetery();
-
-
-                } else if (packs == 3) {
-
-                    quiapochurch();
-                    sansebastian();
-                    casa();
-                    luneta();
-
-
-                } else if (packs == 4) {
-
-                    manilazoo();
-                    nationalmuseum();
-                    culturalcenter();
-                    pacopark();
-                    sanagustin();
-
-                } else if (packs == 5) {
-
-                    starcity();
-                    coconutpalace();
-                    manilaoceanpark();
-                    museopambata();
-
-
-                }
-            }
 
 
             ////////////////////////////////////////BAGUIO///////////////////
             if (SelectQcBagManila.bg == 1) {
                 if (packs == 1) {
-
 
                     burnhampark();
                     baguiocathedral();
@@ -858,7 +829,7 @@ public class traffic extends FragmentActivity implements LocationListener, OnMap
 
                 } else if (packs == 3) {
 
-                 bencab();
+                    bencab();
                     goodshepherd();
                     baguiocountryclub();
                     bellhouse();
@@ -866,18 +837,17 @@ public class traffic extends FragmentActivity implements LocationListener, OnMap
 
                 } else if (packs == 4) {
 
-                    manilazoo();
-                    nationalmuseum();
-                    culturalcenter();
-                    pacopark();
-                    sanagustin();
+                    baguiomuseum();
+                    treetopmuseum();
+                    Tamawanvillage();
+                    lionshead();
 
                 } else if (packs == 5) {
 
-                    starcity();
-                    coconutpalace();
-                    manilaoceanpark();
-                    museopambata();
+                    lourdesgrotto();
+                    bellhouse();
+                    teacherscamp();
+                    orchidarium();
 
 
                 }
@@ -899,7 +869,7 @@ public class traffic extends FragmentActivity implements LocationListener, OnMap
         }*/
 
 
-    }
+
 
 
     @Override
@@ -2119,184 +2089,184 @@ public class traffic extends FragmentActivity implements LocationListener, OnMap
 
 
     public void selected() {
+        if (SelectQcBagManila.qc == 1) {
+            if (InfoOfArt.select == 1) {
+                if (art == 0) {
 
-        if (InfoOfArt.select == 1) {
-            if (art == 0) {
-
-                ArtInIsland();
-                art = 1;
-
-
-            } else if (art == 1) {
+                    ArtInIsland();
+                    art = 1;
 
 
-            }
-        }
+                } else if (art == 1) {
 
 
-        if (InfoOfCOF.select == 1) {
-
-            if (cof == 0) {
-                circleoffun();
-                cof = 1;
-            } else if (cof == 1) {
-
-            }
-        }
-
-        if (InfoOfQmc.select == 1) {
-
-
-            if (qmc == 0) {
-
-
-                MemorialCircle();
-                qmc = 1;
-
-
-            } else if (qmc == 1) {
-
+                }
             }
 
-        }
+
+            if (InfoOfCOF.select == 1) {
+
+                if (cof == 0) {
+                    circleoffun();
+                    cof = 1;
+                } else if (cof == 1) {
+
+                }
+            }
+
+            if (InfoOfQmc.select == 1) {
 
 
-        if (InfoOfNinoy.select == 1) {
+                if (qmc == 0) {
 
 
-            if (ninoy == 0) {
-                wildlife();
-                ninoy = 1;
-            } else if (ninoy == 1) {
+                    MemorialCircle();
+                    qmc = 1;
+
+
+                } else if (qmc == 1) {
+
+                }
 
             }
 
-        }
+
+            if (InfoOfNinoy.select == 1) {
 
 
-        if (InfoOfBayani.select == 1) {
-            if (bayani == 0) {
-                bantayog();
-                bayani = 1;
-            } else if (bayani == 1) {
+                if (ninoy == 0) {
+                    wildlife();
+                    ninoy = 1;
+                } else if (ninoy == 1) {
 
-            }
-
-        }
-
-        if (InfoOfMaginhawa.select == 1) {
-
-
-            if (maginhawa == 0) {
-                maginhawa();
-                maginhawa = 1;
-            } else if (maginhawa == 1) {
-
-            }
-        }
-
-
-        if (InfoOfVargas.select == 1) {
-
-
-            if (vargas == 0) {
-                vargas();
-                vargas = 1;
-            } else if (vargas == 1) {
+                }
 
             }
 
-        }
 
+            if (InfoOfBayani.select == 1) {
+                if (bayani == 0) {
+                    bantayog();
+                    bayani = 1;
+                } else if (bayani == 1) {
 
-        if (InfoOfUp.select == 1) {
-            if (ayala == 0) {
-                ayala();
-                ayala = 1;
-            } else if (ayala == 1) {
-
-            }
-        }
-
-
-        if (InfoOfParish.select == 1) {
-            if (parish == 0) {
-                parish();
-                parish = 1;
-
-            } else if (parish == 1) {
-
-            }
-        }
-        if (InfoOfAteneo.select == 1) {
-
-            if (ateneo == 0) {
-                ateneogallery();
-                ateneo = 1;
-            } else if (ateneo == 1) {
+                }
 
             }
 
-        }
+            if (InfoOfMaginhawa.select == 1) {
 
 
-        if (InfoOfEdsa.select == 1) {
+                if (maginhawa == 0) {
+                    maginhawa();
+                    maginhawa = 1;
+                } else if (maginhawa == 1) {
 
-            if (edsa == 0) {
-                edsa();
-                edsa = 1;
-            } else if (edsa == 1) {
+                }
+            }
+
+
+            if (InfoOfVargas.select == 1) {
+
+
+                if (vargas == 0) {
+                    vargas();
+                    vargas = 1;
+                } else if (vargas == 1) {
+
+                }
 
             }
 
-        }
-        if (InfoOfPeople.select == 1) {
+
+            if (InfoOfUp.select == 1) {
+                if (ayala == 0) {
+                    ayala();
+                    ayala = 1;
+                } else if (ayala == 1) {
+
+                }
+            }
 
 
-            if (people == 0) {
-                people();
-                people = 1;
-            } else if (people == 1) {
+            if (InfoOfParish.select == 1) {
+                if (parish == 0) {
+                    parish();
+                    parish = 1;
+
+                } else if (parish == 1) {
+
+                }
+            }
+            if (InfoOfAteneo.select == 1) {
+
+                if (ateneo == 0) {
+                    ateneogallery();
+                    ateneo = 1;
+                } else if (ateneo == 1) {
+
+                }
 
             }
 
-        }
 
+            if (InfoOfEdsa.select == 1) {
 
-        if (InfoOfEast.select == 1) {
+                if (edsa == 0) {
+                    edsa();
+                    edsa = 1;
+                } else if (edsa == 1) {
 
-            if (east == 0) {
-                eastwood();
-                east = 1;
-            } else if (east == 1) {
-
-            }
-        }
-
-
-        if (InfoOfWatershed.select == 1) {
-
-
-            if (watershed == 0) {
-                watershed();
-                watershed = 1;
-            } else if (watershed == 1) {
+                }
 
             }
+            if (InfoOfPeople.select == 1) {
 
-        }
 
+                if (people == 0) {
+                    people();
+                    people = 1;
+                } else if (people == 1) {
 
-        if (InfoOfDam.select == 1) {
-
-            if (dam == 0) {
-                lamesa();
-                dam = 1;
-            } else if (dam == 1) {
+                }
 
             }
-        }
 
+
+            if (InfoOfEast.select == 1) {
+
+                if (east == 0) {
+                    eastwood();
+                    east = 1;
+                } else if (east == 1) {
+
+                }
+            }
+
+
+            if (InfoOfWatershed.select == 1) {
+
+
+                if (watershed == 0) {
+                    watershed();
+                    watershed = 1;
+                } else if (watershed == 1) {
+
+                }
+
+            }
+
+
+            if (InfoOfDam.select == 1) {
+
+                if (dam == 0) {
+                    lamesa();
+                    dam = 1;
+                } else if (dam == 1) {
+
+                }
+            }
+        }
         ////////////////MANILA////////////////////////////
 
         if (SelectQcBagManila.manila == 1) {
@@ -2601,10 +2571,279 @@ public class traffic extends FragmentActivity implements LocationListener, OnMap
 
 
     }
+
+    public void orchidarium() {
+
+
+        double wa = 16.4109;
+        double we = 120.5925;
+        LatLng was = new LatLng(wa, we);
+
+
+        MarkerOptions markerOptions = new MarkerOptions()
+                .position(was)
+                .icon(BitmapDescriptorFactory.fromResource(R.drawable.placesz))
+                .title("ORCHIDARIUM")
+                .snippet("placeId:" + "ChIJu-7-32ihkTMRM2Zsjl00W4k")
+                .anchor(0.5f, 1);
+
+
+        points.add(was);
+
+
+        markers.add(mMap.addMarker(markerOptions));
+
+        //EXTRA CODES
+        mList.add(markerOptions);
+
+        distances.add(new String("0"));
+        durations.add(new String("0"));
+        reminders.add(new String(""));
+        timestoStay.add(new String(""));
+        mins.add(new String(""));
+
+
+        String url = null;
+        try {
+            url = makeURL3();
+        } catch (UnsupportedEncodingException e) {
+            e.printStackTrace();
+        }
+
+
+        connectAsyncTask2 downloadTask2 = new connectAsyncTask2(url, this, true);
+        downloadTask2.execute();
+
+
+    }
+
+    public void teacherscamp() {
+
+
+        double wa = 16.4128;
+        double we = 120.6098;
+        LatLng was = new LatLng(wa, we);
+
+
+        MarkerOptions markerOptions = new MarkerOptions()
+                .position(was)
+                .icon(BitmapDescriptorFactory.fromResource(R.drawable.placesz))
+                .title("BAGUIO TEACHERS' CAMP MUSEUM")
+                .snippet("placeId:" + "ChIJJ4h881qhkTMRhHeP-Y5-YSs")
+                .anchor(0.5f, 1);
+
+
+        points.add(was);
+
+
+        markers.add(mMap.addMarker(markerOptions));
+
+        //EXTRA CODES
+        mList.add(markerOptions);
+
+        distances.add(new String("0"));
+        durations.add(new String("0"));
+        reminders.add(new String(""));
+        timestoStay.add(new String(""));
+        mins.add(new String(""));
+
+
+        String url = null;
+        try {
+            url = makeURL3();
+        } catch (UnsupportedEncodingException e) {
+            e.printStackTrace();
+        }
+
+
+        connectAsyncTask2 downloadTask2 = new connectAsyncTask2(url, this, true);
+        downloadTask2.execute();
+
+
+    }
+
+    public void lionshead() {
+
+
+        double wa = 16.3676;
+        double we = 120.6061;
+        LatLng was = new LatLng(wa, we);
+
+
+        MarkerOptions markerOptions = new MarkerOptions()
+                .position(was)
+                .icon(BitmapDescriptorFactory.fromResource(R.drawable.placesz))
+                .title("Lion's Head")
+                .snippet("placeId:" + "ChIJYdZEH8WgkTMR7cqKb3gr82A")
+                .anchor(0.5f, 1);
+
+
+        points.add(was);
+
+
+        markers.add(mMap.addMarker(markerOptions));
+
+        //EXTRA CODES
+        mList.add(markerOptions);
+
+        distances.add(new String("0"));
+        durations.add(new String("0"));
+        reminders.add(new String(""));
+        timestoStay.add(new String(""));
+        mins.add(new String(""));
+
+
+        String url = null;
+        try {
+            url = makeURL3();
+        } catch (UnsupportedEncodingException e) {
+            e.printStackTrace();
+        }
+
+
+        connectAsyncTask2 downloadTask2 = new connectAsyncTask2(url, this, true);
+        downloadTask2.execute();
+
+
+    }
+
+    public void Tamawanvillage() {
+
+
+        double wa = 16.4295;
+        double we = 120.5762;
+        LatLng was = new LatLng(wa, we);
+
+
+        MarkerOptions markerOptions = new MarkerOptions()
+                .position(was)
+                .icon(BitmapDescriptorFactory.fromResource(R.drawable.placesz))
+                .title("Tam-awan Village")
+                .snippet("placeId:" + "ChIJVbaFMtajkTMRUF08WLUyODY")
+                .anchor(0.5f, 1);
+
+
+        points.add(was);
+
+
+        markers.add(mMap.addMarker(markerOptions));
+
+        //EXTRA CODES
+        mList.add(markerOptions);
+
+        distances.add(new String("0"));
+        durations.add(new String("0"));
+        reminders.add(new String(""));
+        timestoStay.add(new String(""));
+        mins.add(new String(""));
+
+
+        String url = null;
+        try {
+            url = makeURL3();
+        } catch (UnsupportedEncodingException e) {
+            e.printStackTrace();
+        }
+
+
+        connectAsyncTask2 downloadTask2 = new connectAsyncTask2(url, this, true);
+        downloadTask2.execute();
+
+
+    }
+
+    public void treetopmuseum() {
+
+
+        double wa = 16.3984;
+        double we = 120.6173;
+        LatLng was = new LatLng(wa, we);
+
+
+        MarkerOptions markerOptions = new MarkerOptions()
+                .position(was)
+                .icon(BitmapDescriptorFactory.fromResource(R.drawable.placesz))
+                .title("Tree Top Adventure Baguio")
+                .snippet("placeId:" + "ChIJn0fSfjWhkTMRtr6XjPEMbqM")
+                .anchor(0.5f, 1);
+
+
+        points.add(was);
+
+
+        markers.add(mMap.addMarker(markerOptions));
+
+        //EXTRA CODES
+        mList.add(markerOptions);
+
+        distances.add(new String("0"));
+        durations.add(new String("0"));
+        reminders.add(new String(""));
+        timestoStay.add(new String(""));
+        mins.add(new String(""));
+
+
+        String url = null;
+        try {
+            url = makeURL3();
+        } catch (UnsupportedEncodingException e) {
+            e.printStackTrace();
+        }
+
+
+        connectAsyncTask2 downloadTask2 = new connectAsyncTask2(url, this, true);
+        downloadTask2.execute();
+
+
+    }
+
+    public void baguiomuseum() {
+
+
+        double wa = 16.4070;
+        double we = 120.5985;
+        LatLng was = new LatLng(wa, we);
+
+
+        MarkerOptions markerOptions = new MarkerOptions()
+                .position(was)
+                .icon(BitmapDescriptorFactory.fromResource(R.drawable.placesz))
+                .title("Baguio Museum")
+                .snippet("placeId:" + "ChIJ-Z4cIEKhkTMRAkDMgmqq3UQ")
+                .anchor(0.5f, 1);
+
+
+        points.add(was);
+
+
+        markers.add(mMap.addMarker(markerOptions));
+
+        //EXTRA CODES
+        mList.add(markerOptions);
+
+        distances.add(new String("0"));
+        durations.add(new String("0"));
+        reminders.add(new String(""));
+        timestoStay.add(new String(""));
+        mins.add(new String(""));
+
+
+        String url = null;
+        try {
+            url = makeURL3();
+        } catch (UnsupportedEncodingException e) {
+            e.printStackTrace();
+        }
+
+
+        connectAsyncTask2 downloadTask2 = new connectAsyncTask2(url, this, true);
+        downloadTask2.execute();
+
+
+    }
+
     public void bellhouse() {
 
-
-        Toast.makeText(getApplicationContext(), loadingToasts[mList.size() - 1], Toast.LENGTH_LONG).show();
 
         double wa = 16.3991;
         double we = 120.6183;
@@ -2651,8 +2890,6 @@ public class traffic extends FragmentActivity implements LocationListener, OnMap
     public void baguiocountryclub() {
 
 
-        Toast.makeText(getApplicationContext(), loadingToasts[mList.size() - 1], Toast.LENGTH_LONG).show();
-
         double wa = 16.4091;
         double we = 120.6183;
         LatLng was = new LatLng(wa, we);
@@ -2697,8 +2934,6 @@ public class traffic extends FragmentActivity implements LocationListener, OnMap
 
     public void bencab() {
 
-
-        Toast.makeText(getApplicationContext(), loadingToasts[mList.size() - 1], Toast.LENGTH_LONG).show();
 
         double wa = 16.4107;
         double we = 120.5504;
@@ -2745,8 +2980,6 @@ public class traffic extends FragmentActivity implements LocationListener, OnMap
     public void strawberry() {
 
 
-        Toast.makeText(getApplicationContext(), loadingToasts[mList.size() - 1], Toast.LENGTH_LONG).show();
-
         double wa = 16.4580;
         double we = 120.5878;
         LatLng was = new LatLng(wa, we);
@@ -2791,8 +3024,6 @@ public class traffic extends FragmentActivity implements LocationListener, OnMap
 
     public void philippinesmilitiry() {
 
-
-        Toast.makeText(getApplicationContext(), loadingToasts[mList.size() - 1], Toast.LENGTH_LONG).show();
 
         double wa = 16.3667;
         double we = 120.6167;
@@ -2839,8 +3070,6 @@ public class traffic extends FragmentActivity implements LocationListener, OnMap
     public void botanical() {
 
 
-        Toast.makeText(getApplicationContext(), loadingToasts[mList.size() - 1], Toast.LENGTH_LONG).show();
-
         double wa = 16.4144;
         double we = 120.6132;
         LatLng was = new LatLng(wa, we);
@@ -2885,8 +3114,6 @@ public class traffic extends FragmentActivity implements LocationListener, OnMap
 
     public void lourdesgrotto() {
 
-
-        Toast.makeText(getApplicationContext(), loadingToasts[mList.size() - 1], Toast.LENGTH_LONG).show();
 
         double wa = 16.4096;
         double we = 120.5806;
@@ -2934,8 +3161,6 @@ public class traffic extends FragmentActivity implements LocationListener, OnMap
     public void baguiocathedral() {
 
 
-        Toast.makeText(getApplicationContext(), loadingToasts[mList.size() - 1], Toast.LENGTH_LONG).show();
-
         double wa = 16.4126;
         double we = 120.5986;
         LatLng was = new LatLng(wa, we);
@@ -2980,8 +3205,6 @@ public class traffic extends FragmentActivity implements LocationListener, OnMap
 
     public void burnhampark() {
 
-
-        Toast.makeText(getApplicationContext(), loadingToasts[mList.size() - 1], Toast.LENGTH_LONG).show();
 
         double wa = 16.4093;
         double we = 120.5950;
@@ -3028,8 +3251,6 @@ public class traffic extends FragmentActivity implements LocationListener, OnMap
     public void Wrightpark() {
 
 
-        Toast.makeText(getApplicationContext(), loadingToasts[mList.size() - 1], Toast.LENGTH_LONG).show();
-
         double wa = 16.4159;
         double we = 120.6167;
         LatLng was = new LatLng(wa, we);
@@ -3074,8 +3295,6 @@ public class traffic extends FragmentActivity implements LocationListener, OnMap
 
     public void themansion() {
 
-
-        Toast.makeText(getApplicationContext(), loadingToasts[mList.size() - 1], Toast.LENGTH_LONG).show();
 
         double wa = 16.4124;
         double we = 120.6215;
@@ -3122,8 +3341,6 @@ public class traffic extends FragmentActivity implements LocationListener, OnMap
     public void stobosa() {
 
 
-        Toast.makeText(getApplicationContext(), loadingToasts[mList.size() - 1], Toast.LENGTH_LONG).show();
-
         double wa = 16.4337;
         double we = 120.5970;
         LatLng was = new LatLng(wa, we);
@@ -3168,8 +3385,6 @@ public class traffic extends FragmentActivity implements LocationListener, OnMap
 
     public void pinksister() {
 
-
-        Toast.makeText(getApplicationContext(), loadingToasts[mList.size() - 1], Toast.LENGTH_LONG).show();
 
         double wa = 16.4121;
         double we = 120.6042;
@@ -3216,8 +3431,6 @@ public class traffic extends FragmentActivity implements LocationListener, OnMap
     public void nightmarket() {
 
 
-        Toast.makeText(getApplicationContext(), loadingToasts[mList.size() - 1], Toast.LENGTH_LONG).show();
-
         double wa = 16.4130;
         double we = 120.5952;
         LatLng was = new LatLng(wa, we);
@@ -3262,8 +3475,6 @@ public class traffic extends FragmentActivity implements LocationListener, OnMap
 
     public void minesview() {
 
-
-        Toast.makeText(getApplicationContext(), loadingToasts[mList.size() - 1], Toast.LENGTH_LONG).show();
 
         double wa = 16.4196;
         double we = 120.6279;
@@ -3310,8 +3521,6 @@ public class traffic extends FragmentActivity implements LocationListener, OnMap
     public void goodtasteresturant() {
 
 
-        Toast.makeText(getApplicationContext(), loadingToasts[mList.size() - 1], Toast.LENGTH_LONG).show();
-
         double wa = 16.4165;
         double we = 120.5967;
         LatLng was = new LatLng(wa, we);
@@ -3356,8 +3565,6 @@ public class traffic extends FragmentActivity implements LocationListener, OnMap
 
     public void goodshepherd() {
 
-
-        Toast.makeText(getApplicationContext(), loadingToasts[mList.size() - 1], Toast.LENGTH_LONG).show();
 
         double wa = 16.4219;
         double we = 120.6257;
@@ -3404,8 +3611,6 @@ public class traffic extends FragmentActivity implements LocationListener, OnMap
     public void farmerDaughterRestaurant() {
 
 
-        Toast.makeText(getApplicationContext(), loadingToasts[mList.size() - 1], Toast.LENGTH_LONG).show();
-
         double wa = 16.4301;
         double we = 120.5763;
         LatLng was = new LatLng(wa, we);
@@ -3451,8 +3656,6 @@ public class traffic extends FragmentActivity implements LocationListener, OnMap
     public void diplomathotel() {
 
 
-        Toast.makeText(getApplicationContext(), loadingToasts[mList.size() - 1], Toast.LENGTH_LONG).show();
-
         double wa = 16.4039;
         double we = 120.5866;
         LatLng was = new LatLng(wa, we);
@@ -3497,8 +3700,6 @@ public class traffic extends FragmentActivity implements LocationListener, OnMap
 
     public void campJohnHay() {
 
-
-        Toast.makeText(getApplicationContext(), loadingToasts[mList.size() - 1], Toast.LENGTH_LONG).show();
 
         double wa = 16.3970;
         double we = 120.6114;
@@ -3546,8 +3747,6 @@ public class traffic extends FragmentActivity implements LocationListener, OnMap
     public void arcasyard() {
 
 
-        Toast.makeText(getApplicationContext(), loadingToasts[mList.size() - 1], Toast.LENGTH_LONG).show();
-
         double wa = 16.4289;
         double we = 120.6231;
         LatLng was = new LatLng(wa, we);
@@ -3592,8 +3791,6 @@ public class traffic extends FragmentActivity implements LocationListener, OnMap
 
     public void coconutpalace() {
 
-
-        Toast.makeText(getApplicationContext(), loadingToasts[mList.size() - 1], Toast.LENGTH_LONG).show();
 
         double wa = 14.5552;
         double we = 120.9801;
@@ -3640,8 +3837,6 @@ public class traffic extends FragmentActivity implements LocationListener, OnMap
     public void starcity() {
 
 
-        Toast.makeText(getApplicationContext(), loadingToasts[mList.size() - 1], Toast.LENGTH_LONG).show();
-
         double wa = 14.5560;
         double we = 120.9858;
         LatLng was = new LatLng(wa, we);
@@ -3687,8 +3882,6 @@ public class traffic extends FragmentActivity implements LocationListener, OnMap
     public void pacopark() {
 
 
-        Toast.makeText(getApplicationContext(), loadingToasts[mList.size() - 1], Toast.LENGTH_LONG).show();
-
         double wa = 14.5810;
         double we = 120.9884;
         LatLng was = new LatLng(wa, we);
@@ -3733,8 +3926,6 @@ public class traffic extends FragmentActivity implements LocationListener, OnMap
 
     public void culturalcenter() {
 
-
-        Toast.makeText(getApplicationContext(), loadingToasts[mList.size() - 1], Toast.LENGTH_LONG).show();
 
         double wa = 14.5583;
         double we = 120.9857;
@@ -3782,8 +3973,6 @@ public class traffic extends FragmentActivity implements LocationListener, OnMap
     public void nationalmuseum() {
 
 
-        Toast.makeText(getApplicationContext(), loadingToasts[mList.size() - 1], Toast.LENGTH_LONG).show();
-
         double wa = 14.5869;
         double we = 120.9812;
 
@@ -3829,8 +4018,6 @@ public class traffic extends FragmentActivity implements LocationListener, OnMap
 
     public void museopambata() {
 
-
-        Toast.makeText(getApplicationContext(), loadingToasts[mList.size() - 1], Toast.LENGTH_LONG).show();
 
         double wa = 14.5791;
         double we = 120.9771;
@@ -3878,8 +4065,6 @@ public class traffic extends FragmentActivity implements LocationListener, OnMap
     public void manilaoceanpark() {
 
 
-        Toast.makeText(getApplicationContext(), loadingToasts[mList.size() - 1], Toast.LENGTH_LONG).show();
-
         double wa = 14.5792;
         double we = 120.9725;
 
@@ -3925,8 +4110,6 @@ public class traffic extends FragmentActivity implements LocationListener, OnMap
 
     public void filipinochinese() {
 
-
-        Toast.makeText(getApplicationContext(), loadingToasts[mList.size() - 1], Toast.LENGTH_LONG).show();
 
         double wa = 14.5971459;
         double we = 120.9764795;
@@ -3974,8 +4157,6 @@ public class traffic extends FragmentActivity implements LocationListener, OnMap
     public void nayongfilipino() {
 
 
-        Toast.makeText(getApplicationContext(), loadingToasts[mList.size() - 1], Toast.LENGTH_LONG).show();
-
         double wa = 14.584872;
         double we = 120.980213;
 
@@ -4021,8 +4202,6 @@ public class traffic extends FragmentActivity implements LocationListener, OnMap
 
     public void bahaytsinoy() {
 
-
-        Toast.makeText(getApplicationContext(), loadingToasts[mList.size() - 1], Toast.LENGTH_LONG).show();
 
         double wa = 14.5909;
         double we = 120.9750;
@@ -4071,8 +4250,6 @@ public class traffic extends FragmentActivity implements LocationListener, OnMap
     public void sanagustin() {
 
 
-        Toast.makeText(getApplicationContext(), loadingToasts[mList.size() - 1], Toast.LENGTH_LONG).show();
-
         double wa = 14.5886;
         double we = 120.9749;
 
@@ -4119,8 +4296,6 @@ public class traffic extends FragmentActivity implements LocationListener, OnMap
 
     public void manilacathedral() {
 
-
-        Toast.makeText(getApplicationContext(), loadingToasts[mList.size() - 1], Toast.LENGTH_LONG).show();
 
         double wa = 14.5915;
         double we = 120.9736;
@@ -4169,8 +4344,6 @@ public class traffic extends FragmentActivity implements LocationListener, OnMap
     public void casa() {
 
 
-        Toast.makeText(getApplicationContext(), loadingToasts[mList.size() - 1], Toast.LENGTH_LONG).show();
-
         double wa = 14.591496;
         double we = 120.9794;
 
@@ -4217,8 +4390,6 @@ public class traffic extends FragmentActivity implements LocationListener, OnMap
     public void moa() {
 
 
-        Toast.makeText(getApplicationContext(), loadingToasts[mList.size() - 1], Toast.LENGTH_LONG).show();
-
         double wa = 14.5346;
         double we = 120.9825;
         LatLng was = new LatLng(wa, we);
@@ -4263,8 +4434,6 @@ public class traffic extends FragmentActivity implements LocationListener, OnMap
 
     public void sansebastian() {
 
-
-        Toast.makeText(getApplicationContext(), loadingToasts[mList.size() - 1], Toast.LENGTH_LONG).show();
 
         double wa = 14.5996;
         double we = 120.9890;
@@ -4311,8 +4480,6 @@ public class traffic extends FragmentActivity implements LocationListener, OnMap
     public void quiapochurch() {
 
 
-        Toast.makeText(getApplicationContext(), loadingToasts[mList.size() - 1], Toast.LENGTH_LONG).show();
-
         double wa = 14.5988;
         double we = 120.9838;
         LatLng was = new LatLng(wa, we);
@@ -4358,8 +4525,6 @@ public class traffic extends FragmentActivity implements LocationListener, OnMap
     public void luneta() {
 
 
-        Toast.makeText(getApplicationContext(), loadingToasts[mList.size() - 1], Toast.LENGTH_LONG).show();
-
         double wa = 14.5831;
         double we = 120.9794;
         LatLng was = new LatLng(wa, we);
@@ -4404,8 +4569,6 @@ public class traffic extends FragmentActivity implements LocationListener, OnMap
 
     public void ayala() {
 
-
-        Toast.makeText(getApplicationContext(), loadingToasts[mList.size() - 1], Toast.LENGTH_LONG).show();
 
         double wa = 14.6614;
         double we = 121.0635;
@@ -4453,8 +4616,6 @@ public class traffic extends FragmentActivity implements LocationListener, OnMap
 
     public void parish() {
 
-
-        Toast.makeText(getApplicationContext(), loadingToasts[mList.size() - 1], Toast.LENGTH_LONG).show();
 
         double wa = 14.6584;
         double we = 121.0711;
@@ -4509,8 +4670,6 @@ public class traffic extends FragmentActivity implements LocationListener, OnMap
     public void watershed() {
 
 
-        Toast.makeText(getApplicationContext(), loadingToasts[mList.size() - 1], Toast.LENGTH_LONG).show();
-
         double wa = 14.7452;
         double we = 121.0984;
 
@@ -4561,8 +4720,6 @@ public class traffic extends FragmentActivity implements LocationListener, OnMap
 
     public void vargas() {
 
-
-        Toast.makeText(getApplicationContext(), loadingToasts[mList.size() - 1], Toast.LENGTH_LONG).show();
 
         double wa = 14.653056;
         double we = 121.066667;
@@ -4615,8 +4772,6 @@ public class traffic extends FragmentActivity implements LocationListener, OnMap
     public void people() {
 
 
-        Toast.makeText(getApplicationContext(), loadingToasts[mList.size() - 1], Toast.LENGTH_LONG).show();
-
         double wa = 14.6000;
         double we = 121.0600;
 
@@ -4666,8 +4821,6 @@ public class traffic extends FragmentActivity implements LocationListener, OnMap
 
     public void manilachinesecemetery() {
 
-
-        Toast.makeText(getApplicationContext(), loadingToasts[mList.size() - 1], Toast.LENGTH_LONG).show();
 
         double wa = 14.6325;
         double we = 120.9847;
@@ -4719,8 +4872,6 @@ public class traffic extends FragmentActivity implements LocationListener, OnMap
 
     public void chinatown() {
 
-
-        Toast.makeText(getApplicationContext(), loadingToasts[mList.size() - 1], Toast.LENGTH_LONG).show();
 
         double wa = 14.6012;
         double we = 120.9750;
@@ -4774,8 +4925,6 @@ public class traffic extends FragmentActivity implements LocationListener, OnMap
     public void manilaamericancemetery() {
 
 
-        Toast.makeText(getApplicationContext(), loadingToasts[mList.size() - 1], Toast.LENGTH_LONG).show();
-
         double wa = 14.5409;
         double we = 121.0503;
 
@@ -4827,8 +4976,6 @@ public class traffic extends FragmentActivity implements LocationListener, OnMap
 
     public void armedforces() {
 
-
-        Toast.makeText(getApplicationContext(), loadingToasts[mList.size() - 1], Toast.LENGTH_LONG).show();
 
         double wa = 14.6110;
         double we = 121.0619;
@@ -4882,8 +5029,6 @@ public class traffic extends FragmentActivity implements LocationListener, OnMap
     public void domingo() {
 
 
-        Toast.makeText(getApplicationContext(), loadingToasts[mList.size() - 1], Toast.LENGTH_LONG).show();
-
         double wa = 14.6263;
         double we = 121.0102;
 
@@ -4935,8 +5080,6 @@ public class traffic extends FragmentActivity implements LocationListener, OnMap
     public void monasterio() {
 
 
-        Toast.makeText(getApplicationContext(), loadingToasts[mList.size() - 1], Toast.LENGTH_LONG).show();
-
         double wa = 14.6303;
         double we = 121.0746;
 
@@ -4987,8 +5130,6 @@ public class traffic extends FragmentActivity implements LocationListener, OnMap
 
     public void cubaoexpo() {
 
-
-        Toast.makeText(getApplicationContext(), loadingToasts[mList.size() - 1], Toast.LENGTH_LONG).show();
 
         double wa = 14.6223;
         double we = 121.0564;
@@ -5042,8 +5183,6 @@ public class traffic extends FragmentActivity implements LocationListener, OnMap
     public void lamesa() {
 
 
-        Toast.makeText(getApplicationContext(), loadingToasts[mList.size() - 1], Toast.LENGTH_LONG).show();
-
         double wa = 14.7164;
         double we = 121.0724;
 
@@ -5094,8 +5233,6 @@ public class traffic extends FragmentActivity implements LocationListener, OnMap
 
     public void pagasa() {
 
-
-        Toast.makeText(getApplicationContext(), loadingToasts[mList.size() - 1], Toast.LENGTH_LONG).show();
 
         double wa = 14.6474;
         double we = 121.0396;
@@ -5148,8 +5285,6 @@ public class traffic extends FragmentActivity implements LocationListener, OnMap
     public void rita() {
 
 
-        Toast.makeText(getApplicationContext(), loadingToasts[mList.size() - 1], Toast.LENGTH_LONG).show();
-
         double wa = 14.6483;
         double we = 121.0322;
 
@@ -5200,8 +5335,6 @@ public class traffic extends FragmentActivity implements LocationListener, OnMap
 
     public void wildlife() {
 
-
-        Toast.makeText(getApplicationContext(), loadingToasts[mList.size() - 1], Toast.LENGTH_LONG).show();
 
         double wa = 14.6509;
         double we = 121.0440;
@@ -5254,8 +5387,6 @@ public class traffic extends FragmentActivity implements LocationListener, OnMap
     public void bantayog() {
 
 
-        Toast.makeText(getApplicationContext(), loadingToasts[mList.size() - 1], Toast.LENGTH_LONG).show();
-
         double wa = 14.6442;
         double we = 121.0393;
 
@@ -5307,8 +5438,6 @@ public class traffic extends FragmentActivity implements LocationListener, OnMap
     public void eastwood() {
 
 
-        Toast.makeText(getApplicationContext(), loadingToasts[mList.size() - 1], Toast.LENGTH_LONG).show();
-
         double wa = 14.6099;
         double we = 121.0811;
 
@@ -5359,8 +5488,6 @@ public class traffic extends FragmentActivity implements LocationListener, OnMap
 
     public void churchgesu() {
 
-
-        Toast.makeText(getApplicationContext(), loadingToasts[mList.size() - 1], Toast.LENGTH_LONG).show();
 
         double wa = 14.6401;
         double we = 121.0800;
@@ -5414,8 +5541,6 @@ public class traffic extends FragmentActivity implements LocationListener, OnMap
     public void maginhawa() {
 
 
-        Toast.makeText(getApplicationContext(), loadingToasts[mList.size() - 1], Toast.LENGTH_LONG).show();
-
         double wa = 14.6467;
         double we = 121.0588;
 
@@ -5466,8 +5591,6 @@ public class traffic extends FragmentActivity implements LocationListener, OnMap
 
     public void edsa() {
 
-
-        Toast.makeText(getApplicationContext(), loadingToasts[mList.size() - 1], Toast.LENGTH_LONG).show();
 
         double wa = 14.5926;
         double we = 121.0587;
@@ -5520,8 +5643,6 @@ public class traffic extends FragmentActivity implements LocationListener, OnMap
     public void ateneogallery() {
 
 
-        Toast.makeText(getApplicationContext(), loadingToasts[mList.size() - 1], Toast.LENGTH_LONG).show();
-
         double wa = 14.6401;
         double we = 121.0773;
 
@@ -5573,8 +5694,6 @@ public class traffic extends FragmentActivity implements LocationListener, OnMap
     public void santamaria() {
 
 
-        Toast.makeText(getApplicationContext(), loadingToasts[mList.size() - 1], Toast.LENGTH_LONG).show();
-
         double wa = 14.6475;
         double we = 121.0752;
 
@@ -5624,8 +5743,6 @@ public class traffic extends FragmentActivity implements LocationListener, OnMap
 
     public void uptc() {
 
-
-        Toast.makeText(getApplicationContext(), loadingToasts[mList.size() - 1], Toast.LENGTH_LONG).show();
 
         double wa = 14.6509;
         double we = 121.0753;
@@ -5680,7 +5797,7 @@ public class traffic extends FragmentActivity implements LocationListener, OnMap
 
 
 
-       /* Toast.makeText(getApplicationContext(), loadingToasts[mList.size() - 1], Toast.LENGTH_LONG).show();*/
+       /* */
 
         double wa = 14.6572;
         double we = 121.0779;
@@ -5733,8 +5850,6 @@ public class traffic extends FragmentActivity implements LocationListener, OnMap
     public void up() {
 
 
-        Toast.makeText(getApplicationContext(), loadingToasts[mList.size() - 1], Toast.LENGTH_LONG).show();
-
         double wa = 14.6546;
         double we = 121.0647;
 
@@ -5785,8 +5900,6 @@ public class traffic extends FragmentActivity implements LocationListener, OnMap
 
     public void qcx() {
 
-
-        Toast.makeText(getApplicationContext(), loadingToasts[mList.size() - 1], Toast.LENGTH_LONG).show();
 
         double wa = 14.6516;
         double we = 121.0514;
@@ -5840,8 +5953,6 @@ public class traffic extends FragmentActivity implements LocationListener, OnMap
     public void circleoffun() {
 
 
-        Toast.makeText(getApplicationContext(), loadingToasts[mList.size() - 1], Toast.LENGTH_LONG).show();
-
         double wa = 14.6534;
         double we = 121.0480;
 
@@ -5892,8 +6003,6 @@ public class traffic extends FragmentActivity implements LocationListener, OnMap
 
     public void heritage() {
 
-
-        Toast.makeText(getApplicationContext(), loadingToasts[mList.size() - 1], Toast.LENGTH_LONG).show();
 
         double wa = 14.6495;
         double we = 121.0503;
@@ -5946,8 +6055,6 @@ public class traffic extends FragmentActivity implements LocationListener, OnMap
 
     public void MemorialCircle() {
 
-
-        Toast.makeText(getApplicationContext(), loadingToasts[mList.size() - 1], Toast.LENGTH_LONG).show();
 
         double wa = 14.6516;
         double we = 121.04941;
@@ -6003,8 +6110,6 @@ public class traffic extends FragmentActivity implements LocationListener, OnMap
     public void mystery() {
 
 
-        Toast.makeText(getApplicationContext(), loadingToasts[mList.size() - 1], Toast.LENGTH_LONG).show();
-
         double wa = 14.6063;
         double we = 121.0787;
 
@@ -6059,8 +6164,6 @@ public class traffic extends FragmentActivity implements LocationListener, OnMap
     public void kamalig() {
 
 
-        Toast.makeText(getApplicationContext(), loadingToasts[mList.size() - 1], Toast.LENGTH_LONG).show();
-
         double wa = 14.6192;
         double we = 121.0564;
 
@@ -6113,8 +6216,6 @@ public class traffic extends FragmentActivity implements LocationListener, OnMap
 
     public void manilazoo() {
 
-
-        Toast.makeText(getApplicationContext(), loadingToasts[mList.size() - 1], Toast.LENGTH_LONG).show();
 
         double wa = 14.5651;
         double we = 120.9885;
@@ -6170,8 +6271,6 @@ public class traffic extends FragmentActivity implements LocationListener, OnMap
     public void fernwood() {
 
 
-        Toast.makeText(getApplicationContext(), loadingToasts[mList.size() - 1], Toast.LENGTH_LONG).show();
-
         double wa = 14.6690;
         double we = 121.0481;
 
@@ -6225,8 +6324,6 @@ public class traffic extends FragmentActivity implements LocationListener, OnMap
 
     public void amoranto() {
 
-
-        Toast.makeText(getApplicationContext(), loadingToasts[mList.size() - 1], Toast.LENGTH_LONG).show();
 
         double wa = 14.6300;
         double we = 121.0231;
@@ -6809,7 +6906,7 @@ public class traffic extends FragmentActivity implements LocationListener, OnMap
     @Override
     public void onMapLongClick(LatLng latLng) {
         //Add marker on LongClick position
-/*        Toast.makeText(getApplicationContext(), loadingToasts[mList.size() - 1], Toast.LENGTH_LONG).show();*/
+/*        */
 
      /*   HashMap<String, String> n = new HashMap<String, String>();
         n.put("a", "a");*/
