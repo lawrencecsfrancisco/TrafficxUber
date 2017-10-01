@@ -2270,6 +2270,27 @@ public class traffic extends FragmentActivity implements LocationListener, OnMap
         ////////////////MANILA////////////////////////////
 
         if (SelectQcBagManila.manila == 1) {
+
+            if (FilipinoChinese.select == 1) {
+
+                if (filipino == 0) {
+                    filipinochinese();
+                    filipino = 1;
+                } else if (filipino == 1) {
+
+                }
+            }
+
+            if (ManilaCathedral.select == 1) {
+
+                if (manilacathedral == 0) {
+                    manilacathedral();
+                    manilacathedral = 1;
+                } else if (manilacathedral == 1) {
+
+                }
+            }
+
             if (BahayTsinoy.select == 1) {
 
                 if (tsinoy == 0) {
@@ -2290,53 +2311,12 @@ public class traffic extends FragmentActivity implements LocationListener, OnMap
                 }
             }
 
-            if (CCP.select == 1) {
+            if (SanAgustinChurch.select == 1) {
 
-                if (ccp == 0) {
-                    culturalcenter();
-                    ccp = 1;
-                } else if (ccp == 1) {
-
-                }
-            }
-
-
-            if (coconutpalace.select == 1) {
-
-                if (coconut == 0) {
-                    coconutpalace();
-                    coconut = 1;
-                } else if (coconut == 1) {
-
-                }
-            }
-
-            if (FilipinoChinese.select == 1) {
-
-                if (filipino == 0) {
-                    filipinochinese();
-                    filipino = 1;
-                } else if (filipino == 1) {
-
-                }
-            }
-
-            if (Luneta.select == 1) {
-
-                if (luneta == 0) {
-                    luneta();
-                    luneta = 1;
-                } else if (luneta == 1) {
-
-                }
-            }
-
-            if (ManilaCathedral.select == 1) {
-
-                if (manilacathedral == 0) {
-                    manilacathedral();
-                    manilacathedral = 1;
-                } else if (manilacathedral == 1) {
+                if (sanagustin == 0) {
+                    sanagustin();
+                    sanagustin = 1;
+                } else if (sanagustin == 1) {
 
                 }
             }
@@ -2360,6 +2340,18 @@ public class traffic extends FragmentActivity implements LocationListener, OnMap
 
                 }
             }
+
+            if (Luneta.select == 1) {
+
+                if (luneta == 0) {
+                    luneta();
+                    luneta = 1;
+                } else if (luneta == 1) {
+
+                }
+            }
+
+
             if (PacoPark.select == 1) {
 
                 if (pacopark == 0) {
@@ -2370,15 +2362,30 @@ public class traffic extends FragmentActivity implements LocationListener, OnMap
                 }
             }
 
-            if (SanAgustinChurch.select == 1) {
 
-                if (sanagustin == 0) {
-                    sanagustin();
-                    sanagustin = 1;
-                } else if (sanagustin == 1) {
+
+            if (CCP.select == 1) {
+
+                if (ccp == 0) {
+                    culturalcenter();
+                    ccp = 1;
+                } else if (ccp == 1) {
 
                 }
             }
+
+
+            if (coconutpalace.select == 1) {
+
+                if (coconut == 0) {
+                    coconutpalace();
+                    coconut = 1;
+                } else if (coconut == 1) {
+
+                }
+            }
+
+
             if (starcity.select == 1) {
 
                 if (star == 0) {
@@ -2395,16 +2402,6 @@ public class traffic extends FragmentActivity implements LocationListener, OnMap
 
 
         if (SelectQcBagManila.bg == 1) {
-            if (ArcaYard.select == 1) {
-
-                if (arcayard == 0) {
-                    arcasyard();
-                    arcayard = 1;
-                } else if (arcayard == 1) {
-
-                }
-            }
-
             if (CampJohnHay.select == 1) {
 
                 if (casa == 0) {
@@ -2415,12 +2412,107 @@ public class traffic extends FragmentActivity implements LocationListener, OnMap
                 }
             }
 
+            if (WrightPark.select == 1) {
+
+                if (star == 0) {
+                    Wrightpark();
+                    star = 1;
+                } else if (star == 1) {
+
+                }
+            }
+
+
+            if (TheMansion.select == 1) {
+
+                if (sanagustin == 0) {
+                    themansion();
+                    sanagustin = 1;
+                } else if (sanagustin == 1) {
+
+                }
+            }
+
+
+            if (MinesViewPark.select == 1) {
+
+                if (manilacathedral == 0) {
+                    minesview();
+                    manilacathedral = 1;
+                } else if (manilacathedral == 1) {
+
+                }
+            }
+
+
+            if (GoodShepherdPlace.select == 1) {
+
+                if (filipino == 0) {
+                    goodshepherd();
+                    filipino = 1;
+                } else if (filipino == 1) {
+
+                }
+            }
+            if (ArcaYard.select == 1) {
+
+                if (arcayard == 0) {
+                    arcasyard();
+                    arcayard = 1;
+                } else if (arcayard == 1) {
+
+                }
+            }
+
+            if (PinkSisterConvent.select == 1) {
+
+                if (nayongfilipino == 0) {
+                    pinksister();
+                    nayongfilipino = 1;
+                } else if (nayongfilipino == 1) {
+
+                }
+            }
+
+
+            if (GoodTasteRestaurant.select == 1) {
+
+                if (luneta == 0) {
+                    goodtasteresturant();
+                    luneta = 1;
+                } else if (luneta == 1) {
+
+                }
+            }
+            if (NightMarket.select == 1) {
+
+                if (national == 0) {
+                    nightmarket();
+                    national = 1;
+                } else if (national == 1) {
+
+                }
+            }
+
+
+
             if (DiplomatHotel.select == 1) {
 
                 if (ccp == 0) {
                     diplomathotel();
                     ccp = 1;
                 } else if (ccp == 1) {
+
+                }
+            }
+
+
+            if (STOBOSAMuralArts.select == 1) {
+
+                if (pacopark == 0) {
+                    stobosa();
+                    pacopark = 1;
+                } else if (pacopark == 1) {
 
                 }
             }
@@ -2436,83 +2528,11 @@ public class traffic extends FragmentActivity implements LocationListener, OnMap
                 }
             }
 
-            if (GoodShepherdPlace.select == 1) {
 
-                if (filipino == 0) {
-                    goodshepherd();
-                    filipino = 1;
-                } else if (filipino == 1) {
 
-                }
-            }
 
-            if (GoodTasteRestaurant.select == 1) {
 
-                if (luneta == 0) {
-                    goodtasteresturant();
-                    luneta = 1;
-                } else if (luneta == 1) {
 
-                }
-            }
-
-            if (MinesViewPark.select == 1) {
-
-                if (manilacathedral == 0) {
-                    minesview();
-                    manilacathedral = 1;
-                } else if (manilacathedral == 1) {
-
-                }
-            }
-
-            if (NightMarket.select == 1) {
-
-                if (national == 0) {
-                    nightmarket();
-                    national = 1;
-                } else if (national == 1) {
-
-                }
-            }
-
-            if (PinkSisterConvent.select == 1) {
-
-                if (nayongfilipino == 0) {
-                    pinksister();
-                    nayongfilipino = 1;
-                } else if (nayongfilipino == 1) {
-
-                }
-            }
-            if (STOBOSAMuralArts.select == 1) {
-
-                if (pacopark == 0) {
-                    stobosa();
-                    pacopark = 1;
-                } else if (pacopark == 1) {
-
-                }
-            }
-
-            if (TheMansion.select == 1) {
-
-                if (sanagustin == 0) {
-                    themansion();
-                    sanagustin = 1;
-                } else if (sanagustin == 1) {
-
-                }
-            }
-            if (WrightPark.select == 1) {
-
-                if (star == 0) {
-                    Wrightpark();
-                    star = 1;
-                } else if (star == 1) {
-
-                }
-            }
         }
 
         Toast.makeText(getApplicationContext(), "Place Updated!", Toast.LENGTH_LONG).show();

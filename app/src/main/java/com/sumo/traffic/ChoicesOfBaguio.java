@@ -37,7 +37,7 @@ public class ChoicesOfBaguio  extends AppCompatActivity {
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i = new Intent (ChoicesOfBaguio.this, ReviewChoiceOfPlace.class);
+                Intent i = new Intent (ChoicesOfBaguio.this, ReviewChoiceOfPlace_Baguio.class);
                 startActivity(i);
                 finishAffinity();
             }

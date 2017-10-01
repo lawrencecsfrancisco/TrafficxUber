@@ -334,7 +334,7 @@ public class ReviewChoiceOfPlace_Baguio extends AppCompatActivity {
     }
 
     public void addmore(View view) {
-        Intent i = new Intent(this, ChoicesOfPlace_Manila.class);
+        Intent i = new Intent(this, ChoicesOfBaguio.class);
         startActivity(i);
         //  finish();
 
@@ -345,7 +345,7 @@ public class ReviewChoiceOfPlace_Baguio extends AppCompatActivity {
     public void onBackPressed() {
 
         // finish();
-        Intent i = new Intent(this, ChoicesOfPlace_Manila.class);
+        Intent i = new Intent(this, ChoicesOfBaguio.class);
         startActivity(i);
     }
 
