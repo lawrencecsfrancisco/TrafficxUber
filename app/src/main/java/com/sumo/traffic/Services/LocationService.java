@@ -4,12 +4,17 @@ package com.sumo.traffic.Services;
  * Created by kixkikx on 1/11/2017.
  */
 
+import android.Manifest;
+import android.app.Activity;
+import android.content.Context;
+import android.content.pm.PackageManager;
 import android.location.Criteria;
 import android.location.Location;
 import android.location.LocationListener;
 import android.location.LocationManager;
 import android.os.Bundle;
 import android.os.Looper;
+import android.support.v4.app.ActivityCompat;
 
 import rx.Observable;
 import rx.Subscriber;
@@ -21,6 +26,8 @@ import rx.Subscriber;
  */
 public class LocationService {
     private final LocationManager mLocationManager;
+    private Context mContext;
+    Activity activity = (Activity) mContext;
 
     public LocationService(LocationManager locationManager) {
         mLocationManager = locationManager;
@@ -57,8 +64,12 @@ public class LocationService {
 
                 Looper.prepare();
 
+
+
+
                 mLocationManager.requestSingleUpdate(locationProvider,
                         locationListener, Looper.myLooper());
+
 
                 Looper.loop();
             }

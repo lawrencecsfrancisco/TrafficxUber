@@ -6622,7 +6622,7 @@ public class traffic extends FragmentActivity implements LocationListener, OnMap
             // for ActivityCompat#requestPermissions for more details.
             return;
         }
-        mMap.setMyLocationEnabled(false);
+        mMap.setMyLocationEnabled(true);
         Log.d("onLocationChanged", "entered");
 
 
